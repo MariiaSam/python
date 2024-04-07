@@ -1,7 +1,7 @@
-# def my_name(name):
-#     print(name)
-#     my_name('Mariia')
+def sum_nums(a, b):
+    sum = a - b
+    return sum
 
-# my_name('Mariia')
 
-# https://peps.python.org/pep-0008/ - форматування
+first_sum = sum_nums(5, 4)
+print(first_sum)
