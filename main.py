@@ -23,18 +23,18 @@
 # result = sum_nums(5, 3)
 # print(result)
 
-my_number = 10
-print(my_number)
+# my_number = 10
+# print(my_number)
 # кожне число - це ексз класу int
 
 # цілі числа, строки, логічні типи, списки, словники
 
-my_numb = 34
-print(my_numb)
+my_number = 34
+print(my_number)
 # цілі числа,
 
-my_name = 'Mariia'
-print(my_name)
+my_string = 'Mariia'
+print(my_string)
 # строки
 
 my_type = False
