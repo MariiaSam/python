@@ -48,3 +48,20 @@ print(my_list)
 my_dictionary = {"name": 'Mariia', "son": "Lev"}
 print(my_dictionary)
 # словники
+
+# =======================
+# динамічна типізація
+
+
+def print_name(name):
+    print(name)
+
+
+print_name("Mariia")
+
+
+# print_name = 34
+
+# print_name('Mariia')
+
+# =======================
