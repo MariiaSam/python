@@ -65,3 +65,15 @@ print_name("Mariia")
 # print_name('Mariia')
 
 # =======================
+
+my_number = 34
+
+print(id(my_number))
+
+my_string = 'Leo'
+print(id(my_string))
+
+my_string = my_number
+print(id(my_string))
+
+# =======================
