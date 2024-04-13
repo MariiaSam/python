@@ -77,3 +77,46 @@ my_string = my_number
 print(id(my_string))
 
 # =======================
+greeting = 'Hello from Python'
+print(greeting)
+
+print(type(greeting))
+
+print(id(greeting))
+# =======================
+
+info_msg = """Це показує, яку частину змісту курсу ви пройшли. Зверніть увагу, що деякі матеріали можуть бути ще не опубліковані."""
+
+print(info_msg)
+# =======================
+
+long_str = """qwertyuiop"""
+
+print(long_str)
+
+print(type(long_str))
+print(id(long_str))
+
+# =======================Вбудовані функції рядків
+
+print(len(long_str))
+#10
+
+print(long_str[0])
+#q
+
+print(long_str[3:6])
+#rty
+
+
+# =======================Методи рядків
+
+my_comment = 'This is my shot comment'
+
+print(len(my_comment))
+
+print(my_comment.replace('shot', 'long'))
+
+print(my_comment)
+
+
