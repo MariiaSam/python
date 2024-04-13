@@ -53,11 +53,11 @@
 # динамічна типізація
 
 
-def print_name(name):
-    print(name)
+# def print_name(name):
+#     print(name)
 
 
-print_name("Mariia")
+# print_name("Mariia")
 
 
 # print_name = 34
@@ -122,10 +122,17 @@ print_name("Mariia")
 # print(my_comment[-1])
 
 # =======================ЦІЛІ ЧИСЛА 
-any_num = input('Enter any name: ')
+# any_num = input('Enter any name: ')
+
+# print(any_num)
+
+# print(type(any_num))
+
+# =======================
+
+user_input = input('Enter your number: ')
+any_num = input(user_input)
 
 print(any_num)
 
 print(type(any_num))
-
-
