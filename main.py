@@ -111,12 +111,16 @@ print(long_str[3:6])
 
 # =======================Методи рядків
 
-my_comment = 'This is my shot comment'
+my_comment = 'This, is my shot comment'
 
 print(len(my_comment))
 
 print(my_comment.replace('shot', 'long'))
 
-print(my_comment)
+print(my_comment.count(' '))
+
+print(my_comment[-1])
+
+# =======================
 
 
