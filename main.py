@@ -29,24 +29,24 @@
 
 # цілі числа, строки, логічні типи, списки, словники
 
-my_number = 34
-print(my_number)
+# my_number = 34
+# print(my_number)
 # цілі числа,
 
-my_string = 'Mariia'
-print(my_string)
+# my_string = 'Mariia'
+# print(my_string)
 # строки
 
-my_type = False
-print(my_type)
+# my_type = False
+# print(my_type)
 # логічні типи,
 
-my_list = [1, "Mariia", True]
-print(my_list)
+# my_list = [1, "Mariia", True]
+# print(my_list)
 # списки
 
-my_dictionary = {"name": 'Mariia', "son": "Lev"}
-print(my_dictionary)
+# my_dictionary = {"name": 'Mariia', "son": "Lev"}
+# print(my_dictionary)
 # словники
 
 # =======================
@@ -66,61 +66,66 @@ print_name("Mariia")
 
 # =======================
 
-my_number = 34
+# my_number = 34
 
-print(id(my_number))
+# print(id(my_number))
 
-my_string = 'Leo'
-print(id(my_string))
+# my_string = 'Leo'
+# print(id(my_string))
 
-my_string = my_number
-print(id(my_string))
+# my_string = my_number
+# print(id(my_string))
 
 # =======================
-greeting = 'Hello from Python'
-print(greeting)
+# greeting = 'Hello from Python'
+# print(greeting)
 
-print(type(greeting))
+# print(type(greeting))
 
-print(id(greeting))
+# print(id(greeting))
 # =======================
 
-info_msg = """Це показує, яку частину змісту курсу ви пройшли. Зверніть увагу, що деякі матеріали можуть бути ще не опубліковані."""
+# info_msg = """Це показує, яку частину змісту курсу ви пройшли. Зверніть увагу, що деякі матеріали можуть бути ще не опубліковані."""
 
-print(info_msg)
+# print(info_msg)
 # =======================
 
-long_str = """qwertyuiop"""
+# long_str = """qwertyuiop"""
 
-print(long_str)
+# print(long_str)
 
-print(type(long_str))
-print(id(long_str))
+# print(type(long_str))
+# print(id(long_str))
 
 # =======================Вбудовані функції рядків
 
-print(len(long_str))
-#10
+# print(len(long_str))
+# #10
 
-print(long_str[0])
-#q
+# print(long_str[0])
+# #q
 
-print(long_str[3:6])
+# print(long_str[3:6])
 #rty
 
 
 # =======================Методи рядків
 
-my_comment = 'This, is my shot comment'
+# my_comment = 'This, is my shot comment'
 
-print(len(my_comment))
+# print(len(my_comment))
 
-print(my_comment.replace('shot', 'long'))
+# print(my_comment.replace('shot', 'long'))
 
-print(my_comment.count(' '))
+# print(my_comment.count(' '))
 
-print(my_comment[-1])
+# print(my_comment[-1])
 
-# =======================
+# =======================ЦІЛІ ЧИСЛА 
+any_num = input('Enter any name: ')
+
+print(any_num)
+
+print(type(any_num))
 
 
