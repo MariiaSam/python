@@ -138,9 +138,52 @@
 # print(type(any_num))
 
 # ======================= Як конвертувати результат input в число
-any_num = input('Enter your : ')
+# any_num = int(input('Enter your: '))
 
-print(any_num)
+# print(any_num)
 
-print(type(any_num))
+# print(type(any_num))
 
+
+# ======================= піднесення до степеню
+
+# base = 5
+# power = 3
+
+# print(pow(base, power))
+
+# ===================
+# one = 24
+
+# two = 3
+
+# print(pow(one, two))
+
+# print(type(pow))
+
+# ======================= довгі числа
+
+# one_million = 1_000_000
+
+# print(one_million)
+
+# my_number = 3_427
+
+# print(my_number)
+
+# =======================
+
+# input_str = input("Enter any number:   ")
+# input_int = int(input_str)
+
+# print(input_int)
+
+# print(type(input_int))
+
+# =======================
+
+# long_int = 1_0_00_000_000
+
+# print(long_int)
+
+# ======================= числа з десятковою частиною
