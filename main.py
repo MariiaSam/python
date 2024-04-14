@@ -130,9 +130,17 @@
 
 # =======================
 
-user_input = input('Enter your number: ')
-any_num = input(user_input)
+# user_input = input('Enter your number: ')
+# any_num = int(user_input) # значення рядка буде конвертоване в ціле число int
+
+# print(any_num)
+
+# print(type(any_num))
+
+# ======================= Як конвертувати результат input в число
+any_num = input('Enter your : ')
 
 print(any_num)
 
 print(type(any_num))
+
