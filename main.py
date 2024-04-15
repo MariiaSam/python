@@ -121,7 +121,7 @@
 
 # print(my_comment[-1])
 
-# =======================ЦІЛІ ЧИСЛА 
+# =======================ЦІЛІ ЧИСЛА. Class int
 # any_num = input('Enter any name: ')
 
 # print(any_num)
@@ -186,4 +186,32 @@
 
 # print(long_int)
 
-# ======================= числа з десятковою частиною
+# ======================= числа з десятковою частиною FLOAT 
+ 
+# average_price = 17.25
+
+# print(average_price)
+
+# print(type(average_price))
+
+# ======================= 
+# rounded_price = round(average_price)
+# print(rounded_price)
+
+# ======================= 
+# abs_price = abs(average_price)
+# print(abs_price)
+
+# ======================= 
+
+average_price = 28.48
+price = (int(average_price))
+
+print(price)
+print(type(price))
+
+str_temperature = '14.5'
+temperature = float(str_temperature)
+
+print(temperature)
+print(type(temperature))
