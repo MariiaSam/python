@@ -204,14 +204,16 @@
 
 # ======================= 
 
-average_price = 28.48
-price = (int(average_price))
+# average_price = 28.48
+# price = int(average_price)
 
-print(price)
-print(type(price))
+# print(price)
+# print(type(price))
 
-str_temperature = '14.5'
-temperature = float(str_temperature)
+# str_temperature = '14.5'
+# temperature = float(str_temperature)
 
-print(temperature)
-print(type(temperature))
+# print(temperature)
+# print(type(temperature))
+
+# ======================= 
