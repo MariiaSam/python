@@ -217,3 +217,22 @@
 # print(type(temperature))
 
 # ======================= 
+
+# rate = 12.65
+
+# print(round(rate))
+
+# rate_min = 12.43
+
+# print(round(rate_min))
+
+# ======================= ЧИСЛА COMPLEX, використовуються для різноманітних математичних рівнянь а також при опрацюванні даних 
+
+complex_a = 3 + 5j
+complex_b = 8 + 6j
+
+sum = complex_a + complex_b
+
+print(sum)
+
+print(type(sum))
