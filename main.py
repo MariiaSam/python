@@ -228,11 +228,88 @@
 
 # ======================= ЧИСЛА COMPLEX, використовуються для різноманітних математичних рівнянь а також при опрацюванні даних 
 
-complex_a = 3 + 5j
-complex_b = 8 + 6j
+# complex_a = 3 + 5j
+# complex_b = 8 + 6j
 
-sum = complex_a + complex_b
+# sum = complex_a + complex_b
 
-print(sum)
+# print(sum)
+# #(11+11j)
 
-print(type(sum))
+# print(type(sum))
+# <class 'complex'>
+
+# ======================= 
+
+# complex_a = 7 + 10j
+# complex_b = 5 + 6j
+
+# print(complex_a + complex_b)
+# # (12+16j)
+
+# print(complex_a * complex_b)
+
+# # (7 + 10j) * (5 + 6j) = 35 + 42j + 50j - 60 = -25 + 92j
+# # для комплексних чисел j в кв. - це мінус 60j^2
+
+# ======================= Логічні значення BOOL
+#  True | False
+
+# ======================= ПЕРЕВІРКА
+# is_authorized = True
+
+# print(is_authorized)
+
+# print(type(is_authorized))
+# # True
+# # <class 'bool'>
+
+# print(100 > 35)
+# #True
+
+# print(3 > 35)
+# # False
+
+# print('Long str' > 'Long')
+# #True
+
+# print([1, 2, 3 ] == [1, 2, 3])
+#True
+
+# ======================= КОНВЕРТАЦІЯ В ЛОГІЧНЕ ЗНАЧЕННЯ
+
+# print(bool(10)) 
+# # True
+
+# print(bool([]))
+# #False
+
+# print(bool('aaa'))
+# # True
+
+# print(bool([1, 2, 3]))
+# # True
+
+# print(bool(None))
+# #False
+
+# print(100 > 10)
+# # True
+
+# print("Long str" > "Short")
+# #False, відбувається посимвольне порівняння
+
+# print("Long str" > "Long")
+# true
+
+# print([] == [])
+# # True
+
+# print({'a': 3 } == {'a': 8})
+# False
+
+# print({'a': 6 } == {'a': 6})
+# # True
+
+
+# ======================= КОНВЕРТАЦІЯ ТИПІВ
