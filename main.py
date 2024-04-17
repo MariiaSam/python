@@ -313,3 +313,53 @@
 
 
 # ======================= КОНВЕРТАЦІЯ ТИПІВ
+# Python не виконує неявну конвертацію типів значень
+
+# str_count = '10' + '5'
+# print(str_count)
+# 105
+
+
+
+# str_count = '10' + 5
+# print(str_count)
+#TypeError: can only concatenate str (not "int") to str
+
+
+# str_count = 10 + '5'
+# print(str_count)
+# TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+# ======================= кон=ректне складання різних типів
+
+# str_count = 5 + int('10')
+# 15
+
+
+int_num = 5
+float_num = 4.5
+
+# print(int_num + float_num)
+# 9.5
+
+print(float_num + int_num)
+# 9.5 
+
+# bool_val = True
+# int_val = 9
+
+# print(bool_val + int_val)
+#10
+
+
+# =======================
+
+# bool_val = False
+# int_val = 9
+
+# print( int_val - bool_val )
+#9
+
+# print( bool_val - bool_val)
+#0
+
