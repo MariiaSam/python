@@ -336,13 +336,13 @@
 # 15
 
 
-int_num = 5
-float_num = 4.5
+# int_num = 5
+# float_num = 4.5
 
-# print(int_num + float_num)
-# 9.5
+# # print(int_num + float_num)
+# # 9.5
 
-print(float_num + int_num)
+# print(float_num + int_num)
 # 9.5 
 
 # bool_val = True
@@ -362,4 +362,19 @@ print(float_num + int_num)
 
 # print( bool_val - bool_val)
 #0
+
+# =======================
+
+int_num = 5
+float_num = 4.5
+
+print(int_num + float_num)
+# 9.5
+
+print(int_num.__add__(float_num))
+#NotImplemented 
+
+
+print(float_num.__radd__(int_num))
+# 9.5
 
