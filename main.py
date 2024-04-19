@@ -381,16 +381,16 @@
 
 # =======================
 
-int_num = 3
-float_num = 10.2
-str_v = 'vavav'
+# int_num = 3
+# float_num = 10.2
+# str_v = 'vavav'
 
 # print(int_num * float_num)
 # 13.2 +
 # 30.599999 *
 
-print(int_num * str_v)
-print(str_v * int_num)
+# print(int_num * str_v)
+# print(str_v * int_num)
 
 #vavavvavavvavav
 
@@ -402,12 +402,61 @@ print(str_v * int_num)
 # print(int_num.__mul__(float_num))
 # NotImplemented
 
-print(int_num.__mul__(str_v))
+# print(int_num.__mul__(str_v))
 # NotImplemented
 
 
 # print(float_num.__rmul__(int_num))
 #30.599999999999998
 
-print(str_v.__rmul__(int_num))
+# print(str_v.__rmul__(int_num))
 #vavavvavavvavav
+
+
+# ======================МАГІЧНІ МЕТОДИ
+# add__()
+# __eq__()
+# __and__()
+# _str__()
+# __neq__()
+# __or__()
+
+# print(bool)
+# #<class 'bool'>
+
+# print(dir(bool))
+
+# print(bool.__doc__)
+# # bool(x) -> bool
+
+# print(str.__doc__)
+
+# my_list = []
+
+#my_list._
+
+# print(help(my_list.__add__))
+
+
+# ======================СПИСКИ LIST
+empty_list = []
+
+my_fruits = ['apple', 'banana', 'lime']
+
+posts_ids = [1, 3, 44, 780]
+
+users_inputs = [True, 1, 'hi', False, 6]
+
+# ======================Довжина СПИСКу LIST
+
+print(len(empty_list))
+#0
+
+print(len(my_fruits))
+# 3
+
+print(len(posts_ids))
+# 4
+
+print(len(users_inputs))
+# 5
