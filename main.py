@@ -365,16 +365,49 @@
 
 # =======================
 
-int_num = 5
-float_num = 4.5
+# int_num = 5
+# float_num = 4.5
 
-print(int_num + float_num)
-# 9.5
+# print(int_num + float_num)
+# # 9.5
 
-print(int_num.__add__(float_num))
-#NotImplemented 
+# print(int_num.__add__(float_num))
+# #NotImplemented 
+# # магічні методи класу int
+
+# print(float_num.__radd__(int_num))
+# # 9.5
+# # магічні методи класу float
+
+# =======================
+
+int_num = 3
+float_num = 10.2
+str_v = 'vavav'
+
+# print(int_num * float_num)
+# 13.2 +
+# 30.599999 *
+
+print(int_num * str_v)
+print(str_v * int_num)
+
+#vavavvavavvavav
+
+# print(int_num.__add__(float_num))
+
+# print(float_num.__radd__(int_num))
 
 
-print(float_num.__radd__(int_num))
-# 9.5
+# print(int_num.__mul__(float_num))
+# NotImplemented
 
+print(int_num.__mul__(str_v))
+# NotImplemented
+
+
+# print(float_num.__rmul__(int_num))
+#30.599999999999998
+
+print(str_v.__rmul__(int_num))
+#vavavvavavvavav
