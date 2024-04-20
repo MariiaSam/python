@@ -449,14 +449,46 @@ users_inputs = [True, 1, 'hi', False, 6]
 
 # ======================Довжина СПИСКу LIST
 
-print(len(empty_list))
-#0
+# print(len(empty_list))
+# #0
 
-print(len(my_fruits))
-# 3
+# print(len(my_fruits))
+# # 3
 
-print(len(posts_ids))
-# 4
+# print(len(posts_ids))
+# # 4
 
-print(len(users_inputs))
+# print(len(users_inputs))
 # 5
+# ======================
+
+posts_ids = [125, 245, 3456, 76, 456, 9978, 67]
+
+print(posts_ids[0]) # 125
+print(posts_ids[1]) # 245
+
+print(posts_ids[-1]) # 67
+
+
+# ====================== змінювати індекс
+
+posts_ids[0] = 9
+posts_ids[3] = 4
+
+print(posts_ids)
+# [9, 245, 3456, 4, 456, 9978, 67]
+# відбулас ь мутація обʼєкта, зміна відбулась в існуюому списку
+
+
+# ====================== видалити елемент списку
+
+user_inputs = [True, 'hi', 'ffff', 123456]
+print(len(user_inputs)) # 4
+
+del user_inputs[1]
+print(user_inputs) # [True, 'ffff', 123456]
+print(len(user_inputs)) # 3
+
+del user_inputs[-1]
+print(user_inputs) # [True, 'ffff']
+print(len(user_inputs)) # 2
