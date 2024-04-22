@@ -472,23 +472,26 @@ print(posts_ids[-1]) # 67
 
 # ====================== змінювати індекс
 
-posts_ids[0] = 9
-posts_ids[3] = 4
+# posts_ids[0] = 9
+# posts_ids[3] = 4
 
-print(posts_ids)
+# print(posts_ids)
 # [9, 245, 3456, 4, 456, 9978, 67]
 # відбулас ь мутація обʼєкта, зміна відбулась в існуюому списку
 
 
 # ====================== видалити елемент списку
 
-user_inputs = [True, 'hi', 'ffff', 123456]
-print(len(user_inputs)) # 4
+# user_inputs = [True, 'hi', 'ffff', 123456]
+# print(len(user_inputs)) # 4
 
-del user_inputs[1]
-print(user_inputs) # [True, 'ffff', 123456]
-print(len(user_inputs)) # 3
+# del user_inputs[1]
+# print(user_inputs) # [True, 'ffff', 123456]
+# print(len(user_inputs)) # 3
 
-del user_inputs[-1]
-print(user_inputs) # [True, 'ffff']
-print(len(user_inputs)) # 2
+# del user_inputs[-1]
+# print(user_inputs) # [True, 'ffff']
+# print(len(user_inputs)) # 2
+
+# ====================== Списки словників
+
