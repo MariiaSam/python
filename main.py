@@ -106,7 +106,7 @@
 # #q
 
 # print(long_str[3:6])
-#rty
+# rty
 
 
 # =======================Методи рядків
@@ -186,23 +186,23 @@
 
 # print(long_int)
 
-# ======================= числа з десятковою частиною FLOAT 
- 
+# ======================= числа з десятковою частиною FLOAT
+
 # average_price = 17.25
 
 # print(average_price)
 
 # print(type(average_price))
 
-# ======================= 
+# =======================
 # rounded_price = round(average_price)
 # print(rounded_price)
 
-# ======================= 
+# =======================
 # abs_price = abs(average_price)
 # print(abs_price)
 
-# ======================= 
+# =======================
 
 # average_price = 28.48
 # price = int(average_price)
@@ -216,7 +216,7 @@
 # print(temperature)
 # print(type(temperature))
 
-# ======================= 
+# =======================
 
 # rate = 12.65
 
@@ -226,7 +226,7 @@
 
 # print(round(rate_min))
 
-# ======================= ЧИСЛА COMPLEX, використовуються для різноманітних математичних рівнянь а також при опрацюванні даних 
+# ======================= ЧИСЛА COMPLEX, використовуються для різноманітних математичних рівнянь а також при опрацюванні даних
 
 # complex_a = 3 + 5j
 # complex_b = 8 + 6j
@@ -239,7 +239,7 @@
 # print(type(sum))
 # <class 'complex'>
 
-# ======================= 
+# =======================
 
 # complex_a = 7 + 10j
 # complex_b = 5 + 6j
@@ -274,11 +274,11 @@
 # #True
 
 # print([1, 2, 3 ] == [1, 2, 3])
-#True
+# True
 
 # ======================= КОНВЕРТАЦІЯ В ЛОГІЧНЕ ЗНАЧЕННЯ
 
-# print(bool(10)) 
+# print(bool(10))
 # # True
 
 # print(bool([]))
@@ -320,10 +320,9 @@
 # 105
 
 
-
 # str_count = '10' + 5
 # print(str_count)
-#TypeError: can only concatenate str (not "int") to str
+# TypeError: can only concatenate str (not "int") to str
 
 
 # str_count = 10 + '5'
@@ -343,13 +342,13 @@
 # # 9.5
 
 # print(float_num + int_num)
-# 9.5 
+# 9.5
 
 # bool_val = True
 # int_val = 9
 
 # print(bool_val + int_val)
-#10
+# 10
 
 
 # =======================
@@ -358,10 +357,10 @@
 # int_val = 9
 
 # print( int_val - bool_val )
-#9
+# 9
 
 # print( bool_val - bool_val)
-#0
+# 0
 
 # =======================
 
@@ -372,7 +371,7 @@
 # # 9.5
 
 # print(int_num.__add__(float_num))
-# #NotImplemented 
+# #NotImplemented
 # # магічні методи класу int
 
 # print(float_num.__radd__(int_num))
@@ -392,7 +391,7 @@
 # print(int_num * str_v)
 # print(str_v * int_num)
 
-#vavavvavavvavav
+# vavavvavavvavav
 
 # print(int_num.__add__(float_num))
 
@@ -407,10 +406,10 @@
 
 
 # print(float_num.__rmul__(int_num))
-#30.599999999999998
+# 30.599999999999998
 
 # print(str_v.__rmul__(int_num))
-#vavavvavavvavav
+# vavavvavavvavav
 
 
 # ======================МАГІЧНІ МЕТОДИ
@@ -433,7 +432,7 @@
 
 # my_list = []
 
-#my_list._
+# my_list._
 
 # print(help(my_list.__add__))
 
@@ -464,10 +463,10 @@ users_inputs = [True, 1, 'hi', False, 6]
 
 posts_ids = [125, 245, 3456, 76, 456, 9978, 67]
 
-print(posts_ids[0]) # 125
-print(posts_ids[1]) # 245
+print(posts_ids[0])  # 125
+print(posts_ids[1])  # 245
 
-print(posts_ids[-1]) # 67
+print(posts_ids[-1])  # 67
 
 
 # ====================== змінювати індекс
@@ -494,4 +493,31 @@ print(posts_ids[-1]) # 67
 # print(len(user_inputs)) # 2
 
 # ====================== Списки словників
+
+# users = [
+#     {
+#         'user_id': 123,
+#         'user_name': 'Mariia'
+#     },
+#     {
+#         'user_id': 876,
+#         'user_name': 'Lev'
+#      }
+
+# ]
+
+# print(len(users)) # 2
+
+# print(users[1]['user_id']) # 876\
+
+# ====================== Використання списків
+
+# my_fruit = 'apple'
+# other_fruit = 'banana'
+# new_fruit = 'lime'
+
+# all_fruits = [my_fruit, other_fruit, new_fruit]
+
+# print(all_fruits)
+# #['apple', 'banana', 'lime']
 
