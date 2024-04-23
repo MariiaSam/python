@@ -580,3 +580,18 @@ posts_ids.sort(reverse=True)
 
 print(posts_ids)
 # [96, 90, 65, 8, 5, 1]
+
+
+# ====================== КОНВЕРТАЦІЯ в СПИСОК  
+
+greeting = 'Hello from Python'
+greeting_letters = list(greeting)
+
+print(greeting_letters)
+# ['H', 'e', 'l', 'l', 'o', ' ', 'f', 'r', 'o', 'm', ' ', 'P', 'y', 't', 'h', 'o', 'n']
+
+my_dict = {'a': 10, 'b': True}
+my_dict_keys = list(my_dict)
+
+print(my_dict_keys)
+# ['a', 'b']
