@@ -510,7 +510,7 @@ print(posts_ids[-1])  # 67
 
 # print(users[1]['user_id']) # 876\
 
-# ====================== Використання списків
+# ====================== Використання змінних
 
 # my_fruit = 'apple'
 # other_fruit = 'banana'
@@ -521,3 +521,62 @@ print(posts_ids[-1])  # 67
 # print(all_fruits)
 # #['apple', 'banana', 'lime']
 
+# ====================== Неіснуючі елементи
+
+# posts_ids = [151, 356, 282, 456]
+
+# print(posts_ids[10])
+ # IndexError:   list index out of range
+
+
+# ====================== МЕТОДИ СПИСКУ
+
+# ====================== ДОДАВАННЯ append()
+
+numbers = []
+
+numbers.append(1)
+numbers.append(2)
+numbers.append(3)
+numbers.append(4)
+numbers.append(5)
+numbers.append(6)
+
+print(numbers)
+# [1, 2, 3, 4, 5, 6]
+
+print(len(numbers))
+# 6
+
+
+# ====================== ВИДАЛЕННЯ pop()  
+inputs = [True, 'hi', 19, 'jdjd']
+
+inputs.pop()
+print(inputs)
+# [True, 'hi', 19]
+
+inputs.pop(0)
+print(inputs)
+# ['hi', 19]
+
+removed_element = inputs.pop()
+print(removed_element)
+# 19
+
+print(inputs)
+#['hi']
+
+# ====================== СОРТУВАННЯ sort()
+
+posts_ids = [5, 8, 96, 1, 90, 65]
+
+posts_ids.sort()
+
+print(posts_ids)
+# [1, 5, 8, 65, 90, 96]
+
+posts_ids.sort(reverse=True)
+
+print(posts_ids)
+# [96, 90, 65, 8, 5, 1]
