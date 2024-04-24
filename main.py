@@ -533,65 +533,65 @@ print(posts_ids[-1])  # 67
 
 # ====================== ДОДАВАННЯ append()
 
-numbers = []
+# numbers = []
 
-numbers.append(1)
-numbers.append(2)
-numbers.append(3)
-numbers.append(4)
-numbers.append(5)
-numbers.append(6)
+# numbers.append(1)
+# numbers.append(2)
+# numbers.append(3)
+# numbers.append(4)
+# numbers.append(5)
+# numbers.append(6)
 
-print(numbers)
-# [1, 2, 3, 4, 5, 6]
+# print(numbers)
+# # [1, 2, 3, 4, 5, 6]
 
-print(len(numbers))
-# 6
-
-
-# ====================== ВИДАЛЕННЯ pop()  
-inputs = [True, 'hi', 19, 'jdjd']
-
-inputs.pop()
-print(inputs)
-# [True, 'hi', 19]
-
-inputs.pop(0)
-print(inputs)
-# ['hi', 19]
-
-removed_element = inputs.pop()
-print(removed_element)
-# 19
-
-print(inputs)
-#['hi']
-
-# ====================== СОРТУВАННЯ sort()
-
-posts_ids = [5, 8, 96, 1, 90, 65]
-
-posts_ids.sort()
-
-print(posts_ids)
-# [1, 5, 8, 65, 90, 96]
-
-posts_ids.sort(reverse=True)
-
-print(posts_ids)
-# [96, 90, 65, 8, 5, 1]
+# print(len(numbers))
+# # 6
 
 
-# ====================== КОНВЕРТАЦІЯ в СПИСОК  
+# # ====================== ВИДАЛЕННЯ pop()  
+# inputs = [True, 'hi', 19, 'jdjd']
 
-greeting = 'Hello from Python'
-greeting_letters = list(greeting)
+# inputs.pop()
+# print(inputs)
+# # [True, 'hi', 19]
 
-print(greeting_letters)
-# ['H', 'e', 'l', 'l', 'o', ' ', 'f', 'r', 'o', 'm', ' ', 'P', 'y', 't', 'h', 'o', 'n']
+# inputs.pop(0)
+# print(inputs)
+# # ['hi', 19]
 
-my_dict = {'a': 10, 'b': True}
-my_dict_keys = list(my_dict)
+# removed_element = inputs.pop()
+# print(removed_element)
+# # 19
 
-print(my_dict_keys)
-# ['a', 'b']
+# print(inputs)
+# #['hi']
+
+# # ====================== СОРТУВАННЯ sort()
+
+# posts_ids = [5, 8, 96, 1, 90, 65]
+
+# posts_ids.sort()
+
+# print(posts_ids)
+# # [1, 5, 8, 65, 90, 96]
+
+# posts_ids.sort(reverse=True)
+
+# print(posts_ids)
+# # [96, 90, 65, 8, 5, 1]
+
+
+# # ====================== КОНВЕРТАЦІЯ в СПИСОК  
+
+# greeting = 'Hello from Python'
+# greeting_letters = list(greeting)
+
+# print(greeting_letters)
+# # ['H', 'e', 'l', 'l', 'o', ' ', 'f', 'r', 'o', 'm', ' ', 'P', 'y', 't', 'h', 'o', 'n']
+
+# my_dict = {'a': 10, 'b': True}
+# my_dict_keys = list(my_dict)
+
+# print(my_dict_keys)
+# # ['a', 'b']
