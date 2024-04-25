@@ -599,19 +599,82 @@ users_inputs = [True, 1, 'hi', False, 6]
 
 # ====================== АРИФМЕТИЧНІ ОПЕРАЦІЇ в СПИСКАХ
 
-ratings = [2.5, 5.0, 4.8, 2.4]
+# ratings = [2.5, 5.0, 4.8, 2.4]
 
-print(min(ratings)) # 2.4
-print(max(ratings)) # 5.0
-print(sum(ratings)) # 14.7
+# print(min(ratings)) # 2.4
+# print(max(ratings)) # 5.0
+# print(sum(ratings)) # 14.7
 
-print(sum(ratings)/len(ratings)) # 3.67
+# print(sum(ratings)/len(ratings)) # 3.67
 
 # ====================== ОБʼЄДНАННЯ в СПИСКАХ
 
-my_ratings = [2.5, 5.0]
+# my_ratings = [2.5, 5.0]
 
-other_ratings = [9.2, 9.1, 6.3]
+# other_ratings = [9.2, 9.1, 6.3]
 
-all_ratings = my_ratings + other_ratings
-print(all_ratings) # [2.5, 5.0, 9.2, 9.1, 6.3]
+# all_ratings = my_ratings + other_ratings
+# print(all_ratings) # [2.5, 5.0, 9.2, 9.1, 6.3]
+
+# при вик-ні оператора + викликається магічний метод списка __add__
+
+# ====================== НАРІЗКА СПИСКІВ
+
+# ratings = [2.2, 5.3, 8.3, 9.2, 3.3]
+
+# first_two_ratings = ratings[:2] # [0:2]
+# print(first_two_ratings) # [2.2, 5.3]
+
+
+# middle_ratings = ratings[1:-1]
+# print(middle_ratings) # [5.3, 8.3, 9.2]
+
+
+# last_two_ratings = ratings[-2:]
+# print(last_two_ratings) # [9.2, 3.3]
+
+# ====================== КОПІЮВАННЯ СПИСКІВ
+
+# my_cars = ['BMW', 'Mercedes']
+
+# copied_cars = my_cars # ['BMW', 'Mercedes']
+
+# copied_cars.append('Audi') # ['BMW', 'Mercedes', 'Audi']
+
+# print(copied_cars)# ['BMW', 'Mercedes', 'Audi']
+
+# print(my_cars) # ['BMW', 'Mercedes', 'Audi']
+
+
+# print(id(my_cars) == id(copied_cars)) # True
+
+# ====================== КОПІЮВАННЯ СПИСКІВ НЕ ПО ПОСИЛАННЮ
+
+# ====================== КОПІЮВАННЯ в новий список
+
+# my_cars = ['BMW', 'Mercedes']
+
+# copied_cars = my_cars[:]
+
+# copied_cars.append('Audi') # ['BMW', 'Mercedes', 'Audi']
+
+# print(copied_cars)# ['BMW', 'Mercedes', 'Audi']
+
+# print(my_cars) # ['BMW', 'Mercedes']
+
+
+# print(id(my_cars) == id(copied_cars)) # False
+
+# ====================== КОПІЮВАННЯ в новий список
+my_cars = ['BMW', 'Mercedes']
+
+copied_cars = my_cars.copy()
+
+copied_cars.append('Audi') # ['BMW', 'Mercedes', 'Audi']
+
+print(copied_cars)# ['BMW', 'Mercedes', 'Audi']
+
+print(my_cars) # ['BMW', 'Mercedes']
+
+
+print(id(my_cars) == id(copied_cars)) # False
