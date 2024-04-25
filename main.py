@@ -461,12 +461,12 @@ users_inputs = [True, 1, 'hi', False, 6]
 # 5
 # ======================
 
-posts_ids = [125, 245, 3456, 76, 456, 9978, 67]
+# posts_ids = [125, 245, 3456, 76, 456, 9978, 67]
 
-print(posts_ids[0])  # 125
-print(posts_ids[1])  # 245
+# print(posts_ids[0])  # 125
+# print(posts_ids[1])  # 245
 
-print(posts_ids[-1])  # 67
+# print(posts_ids[-1])  # 67
 
 
 # ====================== змінювати індекс
@@ -595,3 +595,23 @@ print(posts_ids[-1])  # 67
 
 # print(my_dict_keys)
 # # ['a', 'b']
+
+
+# ====================== АРИФМЕТИЧНІ ОПЕРАЦІЇ в СПИСКАХ
+
+ratings = [2.5, 5.0, 4.8, 2.4]
+
+print(min(ratings)) # 2.4
+print(max(ratings)) # 5.0
+print(sum(ratings)) # 14.7
+
+print(sum(ratings)/len(ratings)) # 3.67
+
+# ====================== ОБʼЄДНАННЯ в СПИСКАХ
+
+my_ratings = [2.5, 5.0]
+
+other_ratings = [9.2, 9.1, 6.3]
+
+all_ratings = my_ratings + other_ratings
+print(all_ratings) # [2.5, 5.0, 9.2, 9.1, 6.3]
