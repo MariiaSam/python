@@ -666,15 +666,15 @@ users_inputs = [True, 1, 'hi', False, 6]
 # print(id(my_cars) == id(copied_cars)) # False
 
 # ====================== КОПІЮВАННЯ в новий список
-my_cars = ['BMW', 'Mercedes']
+# my_cars = ['BMW', 'Mercedes']
 
-copied_cars = my_cars.copy()
+# copied_cars = my_cars.copy()
 
-copied_cars.append('Audi') # ['BMW', 'Mercedes', 'Audi']
+# copied_cars.append('Audi') # ['BMW', 'Mercedes', 'Audi']
 
-print(copied_cars)# ['BMW', 'Mercedes', 'Audi']
+# print(copied_cars)# ['BMW', 'Mercedes', 'Audi']
 
-print(my_cars) # ['BMW', 'Mercedes']
+# print(my_cars) # ['BMW', 'Mercedes']
 
 
-print(id(my_cars) == id(copied_cars)) # False
+# print(id(my_cars) == id(copied_cars)) # False
