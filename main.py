@@ -681,13 +681,13 @@ users_inputs = [True, 1, 'hi', False, 6]
 
 # ====================== НАРІЗКА СПИСКІВ
 
-ratings = [2.3, 4.3, 9.2, 37.8, 1.2, 4.2]
+# ratings = [2.3, 4.3, 9.2, 37.8, 1.2, 4.2]
 
-first_two_ratings = ratings[:2]
-print(first_two_ratings) # [2.3, 4.3]
+# first_two_ratings = ratings[:2]
+# print(first_two_ratings) # [2.3, 4.3]
 
-middle_ratings = ratings[1:-1]
-print(middle_ratings) # [4.3, 9.2, 37.8, 1.2]
+# middle_ratings = ratings[1:-1]
+# print(middle_ratings) # [4.3, 9.2, 37.8, 1.2]
 
-last_two_ratings = ratings[-2:]
-print(last_two_ratings) # [1.2, 4.2]
+# last_two_ratings = ratings[-2:]
+# print(last_two_ratings) # [1.2, 4.2]
