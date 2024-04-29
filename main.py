@@ -691,3 +691,17 @@ users_inputs = [True, 1, 'hi', False, 6]
 
 # last_two_ratings = ratings[-2:]
 # print(last_two_ratings) # [1.2, 4.2]
+
+# ====================== КОПІЮВАННЯ СПИСКА
+
+my_cars = ['BMW', 'Mercedes']
+
+copied_cars = my_cars
+copied_cars.append('Audi')
+print(copied_cars) # ['BMW', 'Mercedes', 'Audi']
+
+
+print(my_cars) # ['BMW', 'Mercedes', 'Audi']
+
+
+print(id(my_cars) == id(copied_cars)) # True
