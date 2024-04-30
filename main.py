@@ -692,16 +692,47 @@ users_inputs = [True, 1, 'hi', False, 6]
 # last_two_ratings = ratings[-2:]
 # print(last_two_ratings) # [1.2, 4.2]
 
-# ====================== КОПІЮВАННЯ СПИСКА
+# ====================== КОПІЮВАННЯ СПИСКА ЗА ПОСИЛАННЯМ
+
+# my_cars = ['BMW', 'Mercedes']
+
+# copied_cars = my_cars
+# copied_cars.append('Audi')
+# print(copied_cars) # ['BMW', 'Mercedes', 'Audi']
+
+
+# print(my_cars) # ['BMW', 'Mercedes', 'Audi']
+
+
+# print(id(my_cars) == id(copied_cars)) # True
+
+# ====================== КОПІЮВАННЯ В НОВИЙ СПИСОК
+# 1 var
+
+# my_cars = ['BMW', 'Mercedes']
+
+# copied_cars = my_cars[:]
+# copied_cars.append('Audi')
+# print(copied_cars) # ['BMW', 'Mercedes', 'Audi']
+
+
+# print(my_cars) # ['BMW', 'Mercedes']
+
+
+# print(id(my_cars) == id(copied_cars)) # False
+
+
+# 2 var
 
 my_cars = ['BMW', 'Mercedes']
 
-copied_cars = my_cars
+copied_cars = my_cars.copy()
 copied_cars.append('Audi')
 print(copied_cars) # ['BMW', 'Mercedes', 'Audi']
 
 
-print(my_cars) # ['BMW', 'Mercedes', 'Audi']
+print(my_cars) # ['BMW', 'Mercedes']
 
 
-print(id(my_cars) == id(copied_cars)) # True
+print(id(my_cars) == id(copied_cars)) # False
+
