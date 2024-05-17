@@ -1,21 +1,9 @@
-# print(dir(__builtins__))
 
-# ============= 
-# name = input("Enter your name: ")
 
-# print(name)
 
-# print(dir(name))
+float1 = 5.0
+float2 = -1.25
 
-# print(name.capitalize())
-# print(name.upper())
+float3 = 587643291.001
 
-# print(name)
-
-# age = input("Enter your age: ")
-
-# print(age)
-
-# city = input("Enter the city you live in: ")
-
-# print(city)
+print(float)
