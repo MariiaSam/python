@@ -137,5 +137,65 @@ except:
 
   # Something went wrong
 
+  #=============================
+  x = False
+
+print(not x) # True
+
+  #=============================
+
+fruits = ["apple", "banana", "cherry"]
+
+if "banana" in fruits:
+  print("yes") #yes
+
+#=============================
+x = ["apple", "banana", "cherry"]
+
+y = ["apple", "banana", "cherry"]
+
+print(x is y) # False
+#=============================
+
+x = ["apple", "banana", "cherry"]
+
+y = x
+
+print(x is y) # True
+
+#=============================
+x = lambda a : a + 10
+
+print(x(5)) # 15
+#=============================
+
+x = lambda a, b, c : a + b + c
+
+print(x(5, 6, 2)) # 13
+
+#=============================
+
+x = None
+
+print(x) # None
 
 
+x = None
+
+if x:
+  print("Do you think None is True?")
+elif x is False:
+  print ("Do you think None is False?")
+else:
+  print("None is not True, or False, None is just None...")
+  #=============================
+def myfunc1():
+  x = "John"
+  def myfunc2():
+    nonlocal x
+    x = "hello"
+  myfunc2()
+  return x
+
+print(myfunc1()) # hello
+#=============================
