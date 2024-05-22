@@ -62,3 +62,40 @@ result = first_numb + int(nn_numb) + int(nnn_numb)
 print(result) # 615
 
 
+# 3. Напишіть програму, яка отримує такі дані: ім’я, вік, хобі, введені з клавіатури (вводяться на окремих рядках), і друкує на екрані одним повідомленням повну інформацію на основі введених даних.
+
+# Вхідні дані:
+
+# Lord Voldemort
+# 72
+# Magic
+# Вихідні дані:
+
+# My name is Lord Voldemort. I am 72 and my hobby is Magic.
+
+name = "Lord Voldemort"
+age = 72
+hobby = "Magic"
+
+str = "My name is " + name + ". I am " + str(int(age)) + " and my " + "hobby is " + hobby 
+print(str)
+
+# 4. Напишіть програму, яка зчитує довжину основи та висоту прямокутного трикутника (цілі числа), обчислює площу і друкує її значення на екрані у відформатованому вигляді (два символи після десяткової крапки). Кожен параметр вводиться на окремому рядку.
+
+# Вхідні дані:
+
+# 3
+# 4
+# Вихідні дані:
+
+# 6.00
+
+length = int(3)
+print(length)
+
+heigth = int(4)
+print(heigth)
+
+total = 0.50 * length * heigth
+print(f"{total:.2f}") 
+
