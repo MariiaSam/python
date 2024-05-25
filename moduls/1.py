@@ -70,19 +70,50 @@ str = "Mariia" # строка
 
 #===========================                     length
 
-my_list = [1, 2, 3, 4, 5]                      
-print(len(my_list)) # 5
+# my_list = [1, 2, 3, 4, 5]                      
+# print(len(my_list)) # 5
 
-#===========================                     sort
-nums = [3, 1, 4, 1, 5, 9, 2]
-nums.sort()
-print(nums)  #  [1, 1, 2, 3, 4, 5, 9]
+# #===========================                     sort
+# nums = [3, 1, 4, 1, 5, 9, 2]
+# nums.sort()
+# print(nums)  #  [1, 1, 2, 3, 4, 5, 9]
 
 
-nums.sort(reverse=True)
-print(nums)  #  [9, 5, 4, 3, 2, 1, 1]
+# nums.sort(reverse=True)
+# print(nums)  #  [9, 5, 4, 3, 2, 1, 1]
 
-# =========================
+
+# words = ["banana", "apple", "cherry"]
+# words.sort(key=len)
+# print(words)  # ['apple', 'banana', 'cherry']
+
+
+# =========================                     sorted
+
+# nums = [3, 1, 4, 1, 5, 9, 2]
+# sorted_nums = sorted(nums)
+# print(sorted_nums)  #  [1, 1, 2, 3, 4, 5, 9]
+
+# sorted_nums_desc = sorted(nums, reverse=True)
+# print(sorted_nums_desc)  # [9, 5, 4, 3, 2, 1, 1]
+
+# words = ["banana", "apple", "cherry"]
+# sorted_words = sorted(words, key=len)
+# print(sorted_words)  #  ['apple', 'banana', 'cherry']
+
+# #==========================                     copy
+
+# chars =  ['a', 'b']
+# chars_copy = chars.copy()
+
+# ========================                  reverse()
+
+chars = ["banana", "apple", "cherry"]
+chars.reverse()
+
+print(chars) # ['cherry', 'apple', 'banana']
+
+# ========================  
 
 # message = "Hello world!"
 # print(message[0])
