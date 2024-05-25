@@ -1,6 +1,46 @@
 # ТИПИ ДАНИХ
 
-str = "Mariia" # строка
+
+# Числові типи
+# Логічний тип (Boolean).
+# Текстовий тип або рядки.
+# Тип None
+
+#=================================================== ЧИСЛА
+
+
+int = 1 # ціле число
+float = 3.14 # Дійсні числа 
+ 
+
+complex_number = 3.3 + 2j # Комплексні числа 
+print(complex_number)
+
+#=================================================== Логічний тип
+
+
+is_active = True
+is_delete = False
+
+#===================================================  Рядки
+# str = "Mariia" # Рядки
+
+s1 = "Hello"
+s2 = "world!"
+joined_string = s1 + " " + s2
+print(joined_string) # Hello world!
+
+name = "Oleg"
+hello_string = f"Hello, {name}!"
+
+print(hello_string) #Hello, Oleg!
+
+
+#===================================================  Тип None
+connect_to_database = None
+
+
+#===================================================  Колекції
 
 #  типи колекцій:
 # Списки (Lists)
@@ -10,12 +50,18 @@ str = "Mariia" # строка
 # Заморожені множини (Frozen Sets)
 
 
-#=================================================== Списки (Lists)
+#=================================================== Списки   Lists(), list=[]
 # my_list = list()
 # empty_list = []
 # my_list = [1, 2, 3, 4, 5]
 # my_list = [1, "Hello", 3.14]
+
+#====================================      append ДОДАТИ
+
 # my_list.append(4)
+
+#====================================      remove ВИДАЛИТИ
+
 # my_list.remove("Hello")
 
 # some_iterable = ["a", "b", "c"]
@@ -31,7 +77,7 @@ str = "Mariia" # строка
 # print(last_letter) # c
 
 
-#====================================      pop
+#====================================      pop 
 
 # chars = ['a', 'b', 'c']
 # last = chars.pop(1)
@@ -43,6 +89,7 @@ str = "Mariia" # строка
 
 # chars = ['a', 'b', 'c']
 # numbers = [1, 2]
+#===========================                 extend
 
 # chars.extend(numbers)
 # print(chars) # ['a', 'b', 'c', 1, 2]
@@ -113,7 +160,46 @@ chars.reverse()
 
 print(chars) # ['cherry', 'apple', 'banana']
 
-# ========================  
+# ========================            Словники      dict = {}
+
+
+my_dict = {"name": "Alice", "age": 25, "city": "New York"}
+print(my_dict["name"])  #  'Alice'
+
+my_dict["age"] = 26 
+print(my_dict) # {'name': 'Alice', 'age': 26, 'city': 'New York'}
+
+my_dict['email'] = 'qwerty@wwe.qww'
+print(my_dict) #  {'name': 'Alice', 'age': 26, 'city': 'New York', 'email': 'qwerty@wwe.qww'}
+
+del my_dict['email']
+print(my_dict) # {'name': 'Alice', 'age': 26, 'city': 'New York'}
+
+print("name" in my_dict) # True
+
+# ========================  Методи словників
+# pop
+# update()
+# clear()
+# copy()
+# get() 
+
+my_dict = {"name": "Alice", "age": 25}
+age = my_dict.get("age")  #  25
+gender = my_dict.get("gender")  #  None, оскільки "gender" немає в словнику
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # message = "Hello world!"
 # print(message[0])
@@ -187,3 +273,13 @@ print(chars) # ['cherry', 'apple', 'banana']
 # print(f"Загальна вартість у центах: {total_cents} центів")
 
 #==========================================
+
+# names = ['Anna', "Mariia", "Oleg"]
+# names.append("Igor")
+# print(names)
+
+# first_name = names[0]
+# print(first_name)
+
+# names[0] = "Lev"
+# print(names)
