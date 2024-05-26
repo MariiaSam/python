@@ -190,18 +190,66 @@ gender = my_dict.get("gender")  #  None, оскільки "gender" немає в
 
 
 
+# ========================  Множини
 
 
+empty_set = set() # щоб створити
+a = set('hello')
+b = {1, 2, 3, 4, 5}
 
 
+# numbers = {1, 2, 3, 1, 2, 3, 7}
+# print(numbers)
+# print(numbers) # {1, 2, 3}
+
+# set_numbers = set(numbers)
+# print(set_numbers) # {1, 2, 3}
 
 
+# numbers = {1, 2, 3}
+# numbers.add(4)
+# print(numbers)  # {1, 2, 3, 4}
 
+# numbers = {1, 2, 3}
+# numbers.remove(3)
+# print(numbers)  # {1, 2}
+
+numbers = {1, 2, 3}
+numbers.discard(3)
+print(numbers)  # {1, 2}
+
+
+#===========================        Кортежі
+
+my_tuple = tuple() # або
+my_tuple = ()
+
+my_tuple = (1, 2, 3)
+
+#n========================
+"123".isdigit()  # True
+"hello".isalpha()  # True
+" ".isspace()  # True
+
+
+#n======================== Slice
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odd_numbers = numbers[0:1:1]
+print(odd_numbers)
+
+odd_numbers = numbers[0:10:2]
+print(odd_numbers)#[1, 3, 5, 7, 9]
+
+print(numbers)
+
+print(odd_numbers)#[1, 3, 5, 7, 9]
 
 
 
 
 # message = "Hello world!"
+
 # print(message[0])
 #===========================
 
