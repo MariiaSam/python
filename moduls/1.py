@@ -10,7 +10,7 @@
 
 
 int = 1  # ціле число
-float = 3.14  # Дійсні числа
+# float = 3.14  # Дійсні числа
 
 
 complex_number = 3.3 + 2j  # Комплексні числа
@@ -334,11 +334,26 @@ print(odd_numbers)  # [1, 3, 5, 7, 9]
 # print(name)
 
 # ==========================================
-apple_quantity = float(input('Введіть кількість: '))
-apple_price = float(input('Введіть ціну: '))
+# apple_quantity = float(input('Введіть кількість: '))
+# apple_price = float(input('Введіть ціну: '))
 
-pear_quantity = float(input('Введіть кількість: '))
-pear_price = float(input('Введіть ціну: '))
+# pear_quantity = float(input('Введіть кількість: '))
+# pear_price = float(input('Введіть ціну: '))
 
-buy = f"Для приготування пирога потрібно придбати яблука {apple_quantity} кг за ціною {apple_price} та груші {pear_quantity} кг за ціною {pear_price} грн. Загальна вартість складу {(apple_quantity * apple_price ) + (pear_quantity * pear_price)}"
-print(buy)
+# buy = f"Для приготування пирога потрібно придбати яблука {apple_quantity} кг за ціною {apple_price} та груші {pear_quantity} кг за ціною {pear_price} грн. Загальна вартість складу {(apple_quantity * apple_price ) + (pear_quantity * pear_price)}"
+# print(buy)
+
+# apple_quantity = float(input('Введіть кількість яблук (кг): '))
+# apple_price = float(input('Введіть ціну яблук (грн за кг): '))
+
+# pear_quantity = float(input('Введіть кількість груш (кг): '))
+# pear_price = float(input('Введіть ціну груш (грн за кг): '))
+
+# buy = f"Для приготування пирога потрібно придбати яблука {apple_quantity} кг за ціною {apple_price} грн та груші {pear_quantity} кг за ціною {pear_price} грн. Загальна вартість складає {(apple_quantity * apple_price) + (pear_quantity * pear_price)} грн."
+# print(buy)
+
+
+# ==========================================
+a = list[1, 2, 3, 5]
+print(a)
+print(type(a))
