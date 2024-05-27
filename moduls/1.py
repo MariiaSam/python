@@ -6,41 +6,41 @@
 # Текстовий тип або рядки.
 # Тип None
 
-#=================================================== ЧИСЛА
+# =================================================== ЧИСЛА
 
 
-int = 1 # ціле число
-float = 3.14 # Дійсні числа 
- 
+int = 1  # ціле число
+float = 3.14  # Дійсні числа
 
-complex_number = 3.3 + 2j # Комплексні числа 
+
+complex_number = 3.3 + 2j  # Комплексні числа
 print(complex_number)
 
-#=================================================== Логічний тип
+# =================================================== Логічний тип
 
 
 is_active = True
 is_delete = False
 
-#===================================================  Рядки
+# ===================================================  Рядки
 # str = "Mariia" # Рядки
 
 s1 = "Hello"
 s2 = "world!"
 joined_string = s1 + " " + s2
-print(joined_string) # Hello world!
+print(joined_string)  # Hello world!
 
 name = "Oleg"
 hello_string = f"Hello, {name}!"
 
-print(hello_string) #Hello, Oleg!
+print(hello_string)  # Hello, Oleg!
 
 
-#===================================================  Тип None
+# ===================================================  Тип None
 connect_to_database = None
 
 
-#===================================================  Колекції
+# ===================================================  Колекції
 
 #  типи колекцій:
 # Списки (Lists)
@@ -50,17 +50,17 @@ connect_to_database = None
 # Заморожені множини (Frozen Sets)
 
 
-#=================================================== Списки   Lists(), list=[]
+# =================================================== Списки   Lists(), list=[]
 # my_list = list()
 # empty_list = []
 # my_list = [1, 2, 3, 4, 5]
 # my_list = [1, "Hello", 3.14]
 
-#====================================      append ДОДАТИ
+# ====================================      append ДОДАТИ
 
 # my_list.append(4)
 
-#====================================      remove ВИДАЛИТИ
+# ====================================      remove ВИДАЛИТИ
 
 # my_list.remove("Hello")
 
@@ -77,7 +77,7 @@ connect_to_database = None
 # print(last_letter) # c
 
 
-#====================================      pop 
+# ====================================      pop
 
 # chars = ['a', 'b', 'c']
 # last = chars.pop(1)
@@ -85,39 +85,39 @@ connect_to_database = None
 # print(last) # b
 # print(chars) # ['a', 'c']
 
-#===========================                 pop
+# ===========================                 pop
 
 # chars = ['a', 'b', 'c']
 # numbers = [1, 2]
-#===========================                 extend
+# ===========================                 extend
 
 # chars.extend(numbers)
 # print(chars) # ['a', 'b', 'c', 1, 2]
 
-#===========================                 insert
+# ===========================                 insert
 # chars = ['a', 'b', 'c']
 # chars.insert(1, "d")
 
 # print(chars) # ['a', 'd', 'b', 'c']
 
-#===========================                  clear
+# ===========================                  clear
 # chars.clear() # []
 
-#===========================                   index
+# ===========================                   index
 # chars = ['a', 'b', 'c', 'd']
 # c_ind = chars.index('c')
 
 # print(c_ind) # 2
 
-#===========================                    count()
+# ===========================                    count()
 
 # my_list = [1, 2, 3, 4, 2, 2, 5, 2]
 # count_2 = my_list.count(3)
 # print(count_2)  # Виведе 1, оскільки число 3 зустрічається 1 раз
 
-#===========================                     length
+# ===========================                     length
 
-# my_list = [1, 2, 3, 4, 5]                      
+# my_list = [1, 2, 3, 4, 5]
 # print(len(my_list)) # 5
 
 # #===========================                     sort
@@ -158,42 +158,42 @@ connect_to_database = None
 chars = ["banana", "apple", "cherry"]
 chars.reverse()
 
-print(chars) # ['cherry', 'apple', 'banana']
+print(chars)  # ['cherry', 'apple', 'banana']
 
 # ========================            Словники      dict = {}
 
 
 my_dict = {"name": "Alice", "age": 25, "city": "New York"}
-print(my_dict["name"])  #  'Alice'
+print(my_dict["name"])  # 'Alice'
 
-my_dict["age"] = 26 
-print(my_dict) # {'name': 'Alice', 'age': 26, 'city': 'New York'}
+my_dict["age"] = 26
+print(my_dict)  # {'name': 'Alice', 'age': 26, 'city': 'New York'}
 
 my_dict['email'] = 'qwerty@wwe.qww'
-print(my_dict) #  {'name': 'Alice', 'age': 26, 'city': 'New York', 'email': 'qwerty@wwe.qww'}
+# {'name': 'Alice', 'age': 26, 'city': 'New York', 'email': 'qwerty@wwe.qww'}
+print(my_dict)
 
 del my_dict['email']
-print(my_dict) # {'name': 'Alice', 'age': 26, 'city': 'New York'}
+print(my_dict)  # {'name': 'Alice', 'age': 26, 'city': 'New York'}
 
-print("name" in my_dict) # True
+print("name" in my_dict)  # True
 
 # ========================  Методи словників
 # pop
 # update()
 # clear()
 # copy()
-# get() 
+# get()
 
 my_dict = {"name": "Alice", "age": 25}
-age = my_dict.get("age")  #  25
-gender = my_dict.get("gender")  #  None, оскільки "gender" немає в словнику
-
+age = my_dict.get("age")  # 25
+gender = my_dict.get("gender")  # None, оскільки "gender" немає в словнику
 
 
 # ========================  Множини
 
 
-empty_set = set() # щоб створити
+empty_set = set()  # щоб створити
 a = set('hello')
 b = {1, 2, 3, 4, 5}
 
@@ -219,44 +219,42 @@ numbers.discard(3)
 print(numbers)  # {1, 2}
 
 
-#===========================        Кортежі
+# ===========================        Кортежі
 
-my_tuple = tuple() # або
+my_tuple = tuple()  # або
 my_tuple = ()
 
 my_tuple = (1, 2, 3)
 
-#n========================
+# n========================
 "123".isdigit()  # True
 "hello".isalpha()  # True
 " ".isspace()  # True
 
 
-#n======================== Slice
+# n======================== Slice
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 odd_numbers = numbers[0:1:1]
 print(odd_numbers)
 
 odd_numbers = numbers[0:10:2]
-print(odd_numbers)#[1, 3, 5, 7, 9]
+print(odd_numbers)  # [1, 3, 5, 7, 9]
 
 print(numbers)
 
-print(odd_numbers)#[1, 3, 5, 7, 9]
-
-
+print(odd_numbers)  # [1, 3, 5, 7, 9]
 
 
 # message = "Hello world!"
 
 # print(message[0])
-#===========================
+# ===========================
 
 # name = "Oleg"
 # hello_string = f"Hello, {name}!"
 # print(hello_string)
-#===========================
+# ===========================
 
 # side_a = 10
 # side_b = 5
@@ -267,7 +265,7 @@ print(odd_numbers)#[1, 3, 5, 7, 9]
 # S = side_a * side_b / 2
 # print(S) #25.0
 
-#===========================
+# ===========================
 # n = 5000
 
 # hours = n // (60 * 60)
@@ -279,7 +277,7 @@ print(odd_numbers)#[1, 3, 5, 7, 9]
 # print(seconds) # 20
 
 
-#+==========================
+# +==========================
 
 # x = 12
 # print(f"Значення x: {x}") # Значення x: 12
@@ -291,13 +289,13 @@ print(odd_numbers)#[1, 3, 5, 7, 9]
 
 # pi = float('3.14')
 
-#==========================================
+# ==========================================
 # a = float(input("Введіть сторону квадрата a: "))
 # P = 4 * a
 # print(f"Периметр квадрата дорівнює {P}")
 
 
-#==========================================
+# ==========================================
 
 # Встановлюємо ціни на продукти
 # price_per_croissant = 1.04
@@ -320,7 +318,7 @@ print(odd_numbers)#[1, 3, 5, 7, 9]
 # print(f"Загальна вартість у повних доларах: {total_dollars} доларів")
 # print(f"Загальна вартість у центах: {total_cents} центів")
 
-#==========================================
+# ==========================================
 
 # names = ['Anna', "Mariia", "Oleg"]
 # names.append("Igor")
@@ -331,3 +329,16 @@ print(odd_numbers)#[1, 3, 5, 7, 9]
 
 # names[0] = "Lev"
 # print(names)
+
+# name = input("enter your name: ")
+# print(name)
+
+# ==========================================
+apple_quantity = float(input('Введіть кількість: '))
+apple_price = float(input('Введіть ціну: '))
+
+pear_quantity = float(input('Введіть кількість: '))
+pear_price = float(input('Введіть ціну: '))
+
+buy = f"Для приготування пирога потрібно придбати яблука {apple_quantity} кг за ціною {apple_price} та груші {pear_quantity} кг за ціною {pear_price} грн. Загальна вартість складу {(apple_quantity * apple_price ) + (pear_quantity * pear_price)}"
+print(buy)
