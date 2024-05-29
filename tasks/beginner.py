@@ -260,8 +260,6 @@
 # 4 Створи словник з ключем "Данія" і значенням "Копенгаген" та додай його до попереднього словника.
 
 
-
-
 # 1.
 country = {'Ukrine': "Kyiv",'Italy': ['Roma', 'Milan', 'Neapol' ], 'Spain': 'Madrid'}
 
@@ -276,3 +274,28 @@ print(country.keys()) # (['Ukrine', 'Italy', 'Spain'])
 
 new_country = {"Denmark": "Copenhagen"}
 
+country.update(new_country)
+print(country) # {'Ukrine': 'Kyiv', 'Italy': ['Roma', 'Milan', 'Neapol'], 'Spain': 'Madrid', 'Denmark': 'Copenhagen'}
+
+# ==================================================
+# 9.2 Створити словник, де ключ – прізвище учня, а значення ключа – список з його оцінок. В учнів може бути різна кількість оцінок. 
+# Виведи тільки прізвища учнів. 
+# Порахуй середній бал для кожного учня.
+# Створи словник з прізвищами учнів та їх середніми балами і виведи його на екран.
+
+marks = {"Lev": [10, 11, 12], "Anna": [9, 8, 6], "Oleg": [10, 12, 6]}
+print(marks.keys()) # (['Lev', 'Anna', 'Oleg'])
+
+mark_Lev = sum(marks["Lev"]) // len(marks["Lev"])  # 11
+print(mark_Lev)
+
+mark_Anna = sum(marks["Anna"]) // len(marks["Anna"])  # 7
+print(mark_Anna)
+
+mark_Oleg = sum(marks["Oleg"]) // len(marks["Oleg"])  # 9
+print(mark_Oleg)
+
+average_marks = {}
+for student, grades in marks.items():
+    average_marks[student] = sum(grades) // len(grades)
+print(average_marks)  # {'Lev': 11, 'Anna': 7, 'Oleg': 9}
