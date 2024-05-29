@@ -249,6 +249,30 @@
 # ==================================================
 # 8.5. Створи список із п'яти випадкових чисел з діапазону від 0 до 100. Для цього скористайся функцією sample з модуля random.
 
-import random
+# import random
 
-print(random.sample(range(100), 5))  # [56, 54, 26, 90, 66]
+# print(random.sample(range(100), 5))  # [56, 54, 26, 90, 66]
+
+# ================================================== Словники Dictionary
+# 9.1.1 Створи словник, у якому ключами є країни, а елементами – міста, що належать відповідній країні. 
+# 2 Виведи міста другої по рахунку країни у словнику.
+# 3 Виведи усі країни.
+# 4 Створи словник з ключем "Данія" і значенням "Копенгаген" та додай його до попереднього словника.
+
+
+
+
+# 1.
+country = {'Ukrine': "Kyiv",'Italy': ['Roma', 'Milan', 'Neapol' ], 'Spain': 'Madrid'}
+
+print(type(country)) # <class 'dict'>
+print(country) # {'Ukrine': 'Kyiv', 'Italy': 'Roma', 'Spain': 'Madrid'}
+
+# 2.
+print(country["Italy"]) # ['Roma', 'Milan', 'Neapol']
+
+# 3
+print(country.keys()) # (['Ukrine', 'Italy', 'Spain'])
+
+new_country = {"Denmark": "Copenhagen"}
+
