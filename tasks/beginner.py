@@ -299,3 +299,16 @@ average_marks = {}
 for student, grades in marks.items():
     average_marks[student] = sum(grades) // len(grades)
 print(average_marks)  # {'Lev': 11, 'Anna': 7, 'Oleg': 9}
+
+# OR 2 var
+average_students = {"Lev": mark_Lev, "Anna": mark_Anna, "Oleg": mark_Oleg }
+print(average_students) #{'Lev': 11, 'Anna': 7, 'Oleg': 9}
+
+
+text = 'Hello World'
+shift = 3
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+index = alphabet.find(text[0].lower()) #  шукає індекс символу 'h' у рядку alphabet.
+print(index)
+shifted = alphabet[index] # знаходить символ в alphabet за індексом index.
+print(shifted)
