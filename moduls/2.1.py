@@ -98,5 +98,19 @@ a = False or False
 print(a) # False
 
 
+# ==============================    тернарні оператори
+is_nice = True
+state = "nice" if is_nice else "not nice"
 
+
+# ==============================
+some_data = None
+msg = some_data or "Не було повернено даних"
+print(msg)# Не було повернено даних
+
+some_data = None
+if some_data:
+    msg = some_data
+else:
+    msg = "Не було повернено даних"
 
