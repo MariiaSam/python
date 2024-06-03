@@ -52,10 +52,10 @@
 #     print(result)
 # else:
 #     print("Result is None, do something")
-    # Result is None, do something
+# Result is None, do something
 
 
-# =============================== 
+# ===============================
 # user_name = input("Enter your name: ")
 
 # if user_name:
@@ -92,10 +92,10 @@
 # else:
 #     print("Ні")
 
-#==================
+# ==================
 
-a = False or False 
-print(a) # False
+a = False or False
+print(a)  # False
 
 
 # ==============================    тернарні оператори
@@ -106,7 +106,7 @@ state = "nice" if is_nice else "not nice"
 # ==============================
 some_data = None
 msg = some_data or "Не було повернено даних"
-print(msg)# Не було повернено даних
+print(msg)  # Не було повернено даних
 
 some_data = None
 if some_data:
@@ -129,18 +129,18 @@ match fruit:
         print("Unknown fruit.")
 
 
-# ==============================  
+# ==============================
 point = (1, 0)
 
 match point:
     case (0, 0):
-        print("Точка в центрі координат")  
+        print("Точка в центрі координат")
     case (0, y):
-        print(f"Точка лежить на осі Y: y={y}")  
+        print(f"Точка лежить на осі Y: y={y}")
     case (x, 0):
-        print(f"Точка лежить на осі X: x={x}") 
+        print(f"Точка лежить на осі X: x={x}")
     case (x, y):
-        print(f"Точка має координати:  x={x}, y={y}") 
+        print(f"Точка має координати:  x={x}, y={y}")
     case _:
         print("Це не точка")
 
@@ -158,7 +158,7 @@ match point:
 # ==============================
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 for i in alphabet:
-    print(i, end=" ") # a b c d e f g h i j k l m n o p q r s t u v w x y z 
+    print(i, end=" ")  # a b c d e f g h i j k l m n o p q r s t u v w x y z
   # ==============================
 
 odd_numbers = [1, 3, 5, 7, 9]
@@ -170,3 +170,33 @@ for i in odd_numbers:
 # 3
 # 3
 
+# ============================== Цикл WHILE
+
+
+k = 0
+while k < 10:
+    k = k + 1
+    print(k)
+#===============================
+a = 0
+while True:
+    print(a)
+    if a >= 20:
+        break
+    a = a + 1
+
+#===============================
+
+while True:
+    user_input = input()
+    print(user_input)
+    if user_input == "exit":
+        break
+
+#===============================
+a = 0
+while a < 6:
+    a = a + 1
+    if not a % 2:
+        continue
+    print(a)
