@@ -94,55 +94,55 @@
 
 # ==================
 
-a = False or False
-print(a)  # False
+# a = False or False
+# print(a)  # False
 
 
 # ==============================    тернарні оператори
-is_nice = True
-state = "nice" if is_nice else "not nice"
+# is_nice = True
+# state = "nice" if is_nice else "not nice"
 
 
 # ==============================
-some_data = None
-msg = some_data or "Не було повернено даних"
-print(msg)  # Не було повернено даних
+# some_data = None
+# msg = some_data or "Не було повернено даних"
+# print(msg)  # Не було повернено даних
 
-some_data = None
-if some_data:
-    msg = some_data
-else:
-    msg = "Не було повернено даних"
+# some_data = None
+# if some_data:
+#     msg = some_data
+# else:
+#     msg = "Не було повернено даних"
 
 # ==============================        Оператор match
 
-fruit = "apple"
+# fruit = "apple"
 
-match fruit:
-    case "apple":
-        print("This is an apple.")
-    case "banana":
-        print("This is a banana.")
-    case "orange":
-        print("This is an orange.")
-    case _:
-        print("Unknown fruit.")
+# match fruit:
+#     case "apple":
+#         print("This is an apple.")
+#     case "banana":
+#         print("This is a banana.")
+#     case "orange":
+#         print("This is an orange.")
+#     case _:
+#         print("Unknown fruit.")
 
 
 # ==============================
-point = (1, 0)
+# point = (1, 0)
 
-match point:
-    case (0, 0):
-        print("Точка в центрі координат")
-    case (0, y):
-        print(f"Точка лежить на осі Y: y={y}")
-    case (x, 0):
-        print(f"Точка лежить на осі X: x={x}")
-    case (x, y):
-        print(f"Точка має координати:  x={x}, y={y}")
-    case _:
-        print("Це не точка")
+# match point:
+#     case (0, 0):
+#         print("Точка в центрі координат")
+#     case (0, y):
+#         print(f"Точка лежить на осі Y: y={y}")
+#     case (x, 0):
+#         print(f"Точка лежить на осі X: x={x}")
+#     case (x, y):
+#         print(f"Точка має координати:  x={x}, y={y}")
+#     case _:
+#         print("Це не точка")
 
 # ==============================       Цикли
 # fruit = 'apple'
@@ -156,14 +156,14 @@ match point:
 # e
 
 # ==============================
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-for i in alphabet:
-    print(i, end=" ")  # a b c d e f g h i j k l m n o p q r s t u v w x y z
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+# for i in alphabet:
+#     print(i, end=" ")  # a b c d e f g h i j k l m n o p q r s t u v w x y z
   # ==============================
 
-odd_numbers = [1, 3, 5, 7, 9]
-for i in odd_numbers:
-    print(int(i ** 0.6))
+# odd_numbers = [1, 3, 5, 7, 9]
+# for i in odd_numbers:
+#     print(int(i ** 0.6))
 
 # 1
 # 2
@@ -173,30 +173,151 @@ for i in odd_numbers:
 # ============================== Цикл WHILE
 
 
-k = 0
-while k < 10:
-    k = k + 1
-    print(k)
+# k = 0
+# while k < 10:
+#     k = k + 1
+#     print(k)
 #===============================
-a = 0
-while True:
-    print(a)
-    if a >= 20:
-        break
-    a = a + 1
+# a = 0
+# while True:
+#     print(a)
+#     if a >= 20:
+#         break
+#     a = a + 1
 
 #===============================
 
-while True:
-    user_input = input()
-    print(user_input)
-    if user_input == "exit":
-        break
+# while True:
+#     user_input = input()
+#     print(user_input)
+#     if user_input == "exit":
+#         break
 
 #===============================
-a = 0
-while a < 6:
-    a = a + 1
-    if not a % 2:
-        continue
-    print(a)
+# a = 0
+# while a < 6:
+#     a = a + 1
+#     if not a % 2:
+#         continue
+#     print(a)
+
+#=============================== Розширення можливостей циклу for range, enumerate та zip.
+
+
+#=============================== Range
+# for i in range(5): 
+#     print(i) # послідовність чисел від 0 до 4
+    # 0
+    # 1
+    # 2
+    # 3
+    # 4
+#=============================== 
+
+# for i in range(2, 12):
+#     print(i) 
+    # 2
+    # 3
+    # 4
+    # 5
+    # 6
+    # 7
+    # 8
+    # 9
+    # 10
+    # 11
+#=============================== 
+# for i in range(0, 10, 2):
+#     print(i)
+    # 0
+    # 2
+    # 4
+    # 6
+    # 8
+
+#=============================== Enumerate
+# some_list = ["apple", "banana", "cherry"]
+# for i, value in enumerate(some_list):
+#     print(i, value)
+# 0 apple
+# 1 banana
+# 2 cherry
+
+#=============================== Zip
+# list1 = ["зелене", "стигла", "червоний"]
+# list2 = ["яблуко", "вишня", "томат"]
+# for number, letter in zip(list1, list2):
+#     print(number, letter)
+
+# зелене яблуко
+# стигла вишня
+# червоний томат
+
+# list1 = [1, 2, 3]
+# list2 = ['a', 'b', 'c', 'd', 'e']
+
+# for number, letter in zip(list1, list2):
+#     print(number, letter)
+
+# 1 a
+# 2 b
+# 3 c
+
+#=============================== Цикли та словники
+
+numbers = {
+    1: "one",
+    2: "two",
+    3: "three"
+}
+
+
+for i in numbers:
+    print(i)
+
+# 1
+# 2
+# 3
+
+#=============================== 
+
+for i in numbers.keys():
+    print(i)
+# 1
+# 2
+# 3
+
+#=============================== 
+
+for i in numbers.values():
+    print(i)
+
+# one
+# two
+# three
+
+#=============================== 
+for i in numbers.items():
+    print(i)
+
+# (1, 'one')
+# (2, 'two')
+# (3, 'three')
+
+for key, value in numbers.items():
+    print(key, value)
+# 1 one
+# 2 two
+# 3 three
+
+
+# ==================================
+val = 'a'
+try:
+    val = int(val)
+except ValueError:
+    print(f"val {val} is not a number")
+else:
+    print(val > 0)
+finally:
+    print("This will be printed anyway")

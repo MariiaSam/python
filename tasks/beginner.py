@@ -260,22 +260,22 @@
 # 4 Створи словник з ключем "Данія" і значенням "Копенгаген" та додай його до попереднього словника.
 
 
-# 1.
-country = {'Ukrine': "Kyiv",'Italy': ['Roma', 'Milan', 'Neapol' ], 'Spain': 'Madrid'}
+# # 1.
+# country = {'Ukrine': "Kyiv",'Italy': ['Roma', 'Milan', 'Neapol' ], 'Spain': 'Madrid'}
 
-print(type(country)) # <class 'dict'>
-print(country) # {'Ukrine': 'Kyiv', 'Italy': 'Roma', 'Spain': 'Madrid'}
+# print(type(country)) # <class 'dict'>
+# print(country) # {'Ukrine': 'Kyiv', 'Italy': 'Roma', 'Spain': 'Madrid'}
 
-# 2.
-print(country["Italy"]) # ['Roma', 'Milan', 'Neapol']
+# # 2.
+# print(country["Italy"]) # ['Roma', 'Milan', 'Neapol']
 
-# 3
-print(country.keys()) # (['Ukrine', 'Italy', 'Spain'])
+# # 3
+# print(country.keys()) # (['Ukrine', 'Italy', 'Spain'])
 
-new_country = {"Denmark": "Copenhagen"}
+# new_country = {"Denmark": "Copenhagen"}
 
-country.update(new_country)
-print(country) # {'Ukrine': 'Kyiv', 'Italy': ['Roma', 'Milan', 'Neapol'], 'Spain': 'Madrid', 'Denmark': 'Copenhagen'}
+# country.update(new_country)
+# print(country) # {'Ukrine': 'Kyiv', 'Italy': ['Roma', 'Milan', 'Neapol'], 'Spain': 'Madrid', 'Denmark': 'Copenhagen'}
 
 # ==================================================
 # 9.2 Створити словник, де ключ – прізвище учня, а значення ключа – список з його оцінок. В учнів може бути різна кількість оцінок. 
@@ -283,35 +283,35 @@ print(country) # {'Ukrine': 'Kyiv', 'Italy': ['Roma', 'Milan', 'Neapol'], 'Spain
 # Порахуй середній бал для кожного учня.
 # Створи словник з прізвищами учнів та їх середніми балами і виведи його на екран.
 
-marks = {"Lev": [10, 11, 12], "Anna": [9, 8, 6], "Oleg": [10, 12, 6]}
-print(marks.keys()) # (['Lev', 'Anna', 'Oleg'])
+# marks = {"Lev": [10, 11, 12], "Anna": [9, 8, 6], "Oleg": [10, 12, 6]}
+# print(marks.keys()) # (['Lev', 'Anna', 'Oleg'])
 
-mark_Lev = sum(marks["Lev"]) // len(marks["Lev"])  # 11
-print(mark_Lev)
+# mark_Lev = sum(marks["Lev"]) // len(marks["Lev"])  # 11
+# print(mark_Lev)
 
-mark_Anna = sum(marks["Anna"]) // len(marks["Anna"])  # 7
-print(mark_Anna)
+# mark_Anna = sum(marks["Anna"]) // len(marks["Anna"])  # 7
+# print(mark_Anna)
 
-mark_Oleg = sum(marks["Oleg"]) // len(marks["Oleg"])  # 9
-print(mark_Oleg)
+# mark_Oleg = sum(marks["Oleg"]) // len(marks["Oleg"])  # 9
+# print(mark_Oleg)
 
-average_marks = {}
-for student, grades in marks.items():
-    average_marks[student] = sum(grades) // len(grades)
-print(average_marks)  # {'Lev': 11, 'Anna': 7, 'Oleg': 9}
+# average_marks = {}
+# for student, grades in marks.items():
+#     average_marks[student] = sum(grades) // len(grades)
+# print(average_marks)  # {'Lev': 11, 'Anna': 7, 'Oleg': 9}
 
 # OR 2 var
-average_students = {"Lev": mark_Lev, "Anna": mark_Anna, "Oleg": mark_Oleg }
-print(average_students) #{'Lev': 11, 'Anna': 7, 'Oleg': 9}
+# average_students = {"Lev": mark_Lev, "Anna": mark_Anna, "Oleg": mark_Oleg }
+# print(average_students) #{'Lev': 11, 'Anna': 7, 'Oleg': 9}
 
 
-text = 'Hello World'
-shift = 3
-alphabet = 'abcdefghijklmnopqrstuvwxyz'
-index = alphabet.find(text[0].lower()) #  шукає індекс символу 'h' у рядку alphabet.
-print(index)
-shifted = alphabet[index] # знаходить символ в alphabet за індексом index.
-print(shifted)
+# text = 'Hello World'
+# shift = 3
+# alphabet = 'abcdefghijklmnopqrstuvwxyz'
+# index = alphabet.find(text[0].lower()) #  шукає індекс символу 'h' у рядку alphabet.
+# print(index)
+# shifted = alphabet[index] # знаходить символ в alphabet за індексом index.
+# print(shifted)
 
 
 # ==============================
@@ -330,17 +330,33 @@ print(shifted)
 # Розглянемо наступну задачу. Користувач вводить рядок. Треба порахувати скільки символів в рядку та скільки пробілів в рядку. Як ми можемо написати код?# # Зчитування рядка від користувача
 
 
-user_input = input("Введіть рядок: ")
+# user_input = input("Введіть рядок: ")
 
-# Ініціалізація змінних для підрахунку символів та пробілів
-total_chars = len(user_input)  # загальна кількість символів у рядку
-space_count = 0  # кількість пробілів
+# # Ініціалізація змінних для підрахунку символів та пробілів
+# total_chars = len(user_input)  # загальна кількість символів у рядку
+# space_count = 0  # кількість пробілів
 
 # Підрахунок кількості пробілів
-for char in user_input:
-    if char == " ":
-        space_count += 1
+# for char in user_input:
+#     if char == " ":
+#         space_count += 1
 
 # Виведення результатів
-print(f"Загальна кількість символів у рядку: {total_chars}")
-print(f"Кількість пробілів у рядку: {space_count}")
+# print(f"Загальна кількість символів у рядку: {total_chars}")
+# print(f"Кількість пробілів у рядку: {space_count}")
+
+
+# ==============================    FUNCTION
+# 11. конвертувати кожен символ у рядку в його відповідний код ASCII.
+
+def string_to_codes(string: str) -> dict:
+    codes = {}
+    for ch in string:
+        if ch not in codes:
+            codes[ch] = ord(ch)
+    return codes
+
+result = string_to_codes("Hello world!")
+print(result)
+# {'H': 72, 'e': 101, 'l': 108, 'o': 111, ' ': 32, 'w': 119, 'r': 114, 'd': 100, '!': 33}
+
