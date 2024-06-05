@@ -349,14 +349,14 @@
 # ==============================    FUNCTION
 # 11. конвертувати кожен символ у рядку в його відповідний код ASCII.
 
-def string_to_codes(string: str) -> dict:
-    codes = {}
-    for ch in string:
-        if ch not in codes:
-            codes[ch] = ord(ch)
-    return codes
+# def string_to_codes(string: str) -> dict:
+#     codes = {}
+#     for ch in string:
+#         if ch not in codes:
+#             codes[ch] = ord(ch)
+#     return codes
 
-result = string_to_codes("Hello world!")
-print(result)
+# result = string_to_codes("Hello world!")
+# print(result)
 # {'H': 72, 'e': 101, 'l': 108, 'o': 111, ' ': 32, 'w': 119, 'r': 114, 'd': 100, '!': 33}
 
