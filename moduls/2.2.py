@@ -175,13 +175,13 @@
 # age: 25
 
 # ==================================== **Рекурсія
-def factorial(n):
-    if n == 0: # базовий випадок
-        return 1
-    else:
-        return n * factorial(n-1) # рекурсивний випадок
+# def factorial(n):
+#     if n == 0: # базовий випадок
+#         return 1
+#     else:
+#         return n * factorial(n-1) # рекурсивний випадок
 
-print(factorial(5)) # виведе 120
+# print(factorial(5)) # виведе 120
 # 1. Визначення функції factorial
 # Функція factorial визначається для обчислення факторіалу числа n.
 
@@ -229,3 +229,70 @@ print(factorial(5)) # виведе 120
 #         return fibonacci(n-1) + fibonacci(n-2) # рекурсивний випадок
 
 # print(fibonacci(10)) #  55
+
+# ====================================     Стек викликів рекурсії
+ 
+
+# def factorial(n):
+#     print("Виклик функції factorial з n = ", n)
+#     if n == 1:
+#         print("Базовий випадок, n = 1, повернення 1")
+#         return 1
+#     else:
+#         result = n * factorial(n-1)
+#         print("Повернення результату для n = ", n, ": ", result)
+#         return result
+
+# print(factorial(5))
+
+# Виклик функції factorial з n =  5
+# Виклик функції factorial з n =  4
+# Виклик функції factorial з n =  3
+# Виклик функції factorial з n =  2
+# Виклик функції factorial з n =  1
+# Базовий випадок, n = 1, повернення 1
+# Повернення результату для n =  2 :  2
+# Повернення результату для n =  3 :  6
+# Повернення результату для n =  4 :  24
+# Повернення результату для n =  5 :  120
+# 120
+
+# ==================================== Автоперевірка 
+# 1.
+# is_next = None
+# num = int(input("Enter the number of points: "))
+# if num >= 83:
+#     is_next = True
+# else:
+#     is_next = False
+    
+# 2.
+# work_experience = int(input("Enter your full work experience in years: "))
+# if 1 < work_experience <= 5:
+#     developer_type = "Middle"
+# elif work_experience <= 1:
+#     developer_type = "Junior"
+# else:
+#     developer_type = "Senior"
+
+
+# # 3. 
+# num = int(input("Enter a number: "))
+
+# if num > 0:
+#     if num % 2 == 1:
+#         result = "Positive odd number"
+#     else:
+#         result = "Positive even number"
+# elif num < 0:
+#     result = "Negative number"
+# else:
+#     result = "It is zero"
+
+# 4.
+# num = int(input("Enter the integer (0 to 100): "))
+# sum = 0
+
+# while num > 0:
+#     sum += num
+#     num -= 1
