@@ -13,7 +13,7 @@
 #         print(a, "max")
 #     elif a < b:
 #         print(a, "min")
-#     elif a == b: 
+#     elif a == b:
 #         print(a, "дорінює", b)
 #     else:
 #         print(b, "max")
@@ -54,10 +54,10 @@
 #     return num % 2 == 0
 
 # check_even = is_even(4)
-# print(check_even)  
+# print(check_even)
 
 
-#=====================================
+# =====================================
 
 # def modify_string(original: str) -> str:
 #     original = "змінено"
@@ -67,7 +67,7 @@
 # print(modify_string(str_var))  # змінено
 # print(str_var)                 # оригінал
 
-#=====================================
+# =====================================
 # def modify_list(lst: list) -> None:
 #     lst.append(4)
 
@@ -75,7 +75,7 @@
 # modify_list(my_list)
 # print(my_list)  # [1, 2, 3, 4]
 
-#=====================================
+# =====================================
 # def modify_list(lst: list) -> None:
 #     lst = lst.copy()
 #     lst.append(8)
@@ -84,7 +84,7 @@
 # modify_list(my_list)
 # print(my_list) # [1, 2, 3]
 
-#===================================== Області видимості (LEGB)
+# ===================================== Області видимості (LEGB)
 
 # ================ Local
 
@@ -134,7 +134,7 @@
 # func()
 # print('Значення x складає', x) # Значення x складає 2
 
-#================ Ключові аргументи функції
+# ================ Ключові аргументи функції
 
 
 # def func(a, b=5, c=10):
@@ -145,7 +145,7 @@
 # func(25, c=24)
 
 # func(c=50, a=100)
-#================ 
+# ================
 # def say(message, times=1):
 #     print(message * times)
 
@@ -231,7 +231,7 @@
 # print(fibonacci(10)) #  55
 
 # ====================================     Стек викликів рекурсії
- 
+
 
 # def factorial(n):
 #     print("Виклик функції factorial з n = ", n)
@@ -257,7 +257,7 @@
 # Повернення результату для n =  5 :  120
 # 120
 
-# ==================================== Автоперевірка 
+# ==================================== Автоперевірка
 # 1.
 # is_next = None
 # num = int(input("Enter the number of points: "))
@@ -265,7 +265,7 @@
 #     is_next = True
 # else:
 #     is_next = False
-    
+
 # 2.
 # work_experience = int(input("Enter your full work experience in years: "))
 # if 1 < work_experience <= 5:
@@ -276,7 +276,7 @@
 #     developer_type = "Senior"
 
 
-# # 3. 
+# # 3.
 # num = int(input("Enter a number: "))
 
 # if num > 0:
@@ -296,3 +296,63 @@
 # while num > 0:
 #     sum += num
 #     num -= 1
+
+# 5.
+# message = "Never argue with stupid people, they will drag you down to their level and then beat you with experience."
+# search = "r"
+# result = 0
+# for i in message:
+#     if i == search:
+#         result += 1
+# print(result)
+
+# 6.
+# pool = 1000
+# quantity = int(input("Enter the number of mailings: "))
+# try:
+#     if quantity != 0:
+#         chunk = int(pool / quantity)
+#         print(f'Розмір пакету SMS для кожної розсилки: {chunk}')
+#     else:
+#         raise ZeroDivisionError # raise ZeroDivisionError означає, що програма згенерує виключення ZeroDivisionError вручну, якщо введене користувачем значення quantity дорівнює нулю. Це зроблено для того, щоб запобігти поділу на нуль, який не допустимий в математиці та програмуванні.
+    
+# except ZeroDivisionError:
+#     print('Поділ на нуль неможливий!')
+
+
+#     try:
+#     # Код, який може згенерувати виняток
+# except:
+#     # Код для виконання у разі генерації винятку
+
+#7.
+# def greeting():
+#     print("Hello world!")
+
+# greeting()
+
+# 8.
+# def invite_to_event(username):
+#     return f"Dear {username}, we have the honour to invite you to our event"
+
+# 9.
+# def func_outer():
+#     x = 2
+
+#     def func_inner():
+#         nonlocal x
+#         x = 5
+
+#     func_inner()
+#     return x
+
+# result = func_outer()  # 5
+
+def discount_price(price, discount):
+
+    def apply_discount():
+        nonlocal price
+        return price * (1 - discount)
+
+    apply_discount()
+    return price * (1 - discount)
