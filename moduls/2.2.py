@@ -315,7 +315,7 @@
 #         print(f'Розмір пакету SMS для кожної розсилки: {chunk}')
 #     else:
 #         raise ZeroDivisionError # raise ZeroDivisionError означає, що програма згенерує виключення ZeroDivisionError вручну, якщо введене користувачем значення quantity дорівнює нулю. Це зроблено для того, щоб запобігти поділу на нуль, який не допустимий в математиці та програмуванні.
-    
+
 # except ZeroDivisionError:
 #     print('Поділ на нуль неможливий!')
 
@@ -325,7 +325,7 @@
 # except:
 #     # Код для виконання у разі генерації винятку
 
-#7.
+# 7.
 # def greeting():
 #     print("Hello world!")
 
@@ -336,23 +336,57 @@
 #     return f"Dear {username}, we have the honour to invite you to our event"
 
 # 9.
-# def func_outer():
-#     x = 2
 
-#     def func_inner():
-#         nonlocal x
-#         x = 5
+# def discount_price(price, discount):
 
-#     func_inner()
-#     return x
+#     def apply_discount():
+#         nonlocal price
+#         return price * (1 - discount)
 
-# result = func_outer()  # 5
+#     apply_discount()
+#     return price * (1 - discount)
 
-def discount_price(price, discount):
+# 10.
+# def get_fullname(first_name, last_name, middle_name=''):
+#     if  middle_name:
+#        return f'{first_name} {middle_name} {last_name}'
+#     else:
+#         return f'{first_name} {last_name}'
 
-    def apply_discount():
-        nonlocal price
-        return price * (1 - discount)
+# 11.
+# def format_string(string, length):
+#     if len(string) < length:
+#         space = (length - len(string)) // 2
+#         return " " * space + string
+#     else:
+#          return string
 
-    apply_discount()
-    return price * (1 - discount)
+
+# 12.
+# def first(size, *args):
+#     return size + len(args)
+
+
+# def second(size, **kwargs):
+#     return size + len(kwargs)
+
+
+# print(first(5, "first", "second", "third"))  # Результат: 8
+# print(first(1, "Alex", "Boris"))             # Результат: 3
+# print(second(3, comment_one="first", comment_two="second", comment_third="third"))  # Результат: 6
+# print(second(10, comment_one="Alex", comment_two="Boris")) # Результат: 12
+
+# 13
+def factorial(n):
+    if n < 2:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+def number_of_groups(n, k):
+    return factorial(n) // (factorial(n - k) * factorial(k))
+
+    
+    
+    
