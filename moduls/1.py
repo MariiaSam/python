@@ -9,35 +9,35 @@
 # =================================================== ЧИСЛА
 
 
-int = 1  # ціле число
-# float = 3.14  # Дійсні числа
+# int = 1  # ціле число
+# # float = 3.14  # Дійсні числа
 
 
-complex_number = 3.3 + 2j  # Комплексні числа
-print(complex_number)
+# complex_number = 3.3 + 2j  # Комплексні числа
+# print(complex_number)
 
 # =================================================== Логічний тип
 
 
-is_active = True
-is_delete = False
+# is_active = True
+# is_delete = False
 
 # ===================================================  Рядки
 # str = "Mariia" # Рядки
 
-s1 = "Hello"
-s2 = "world!"
-joined_string = s1 + " " + s2
-print(joined_string)  # Hello world!
+# s1 = "Hello"
+# s2 = "world!"
+# joined_string = s1 + " " + s2
+# print(joined_string)  # Hello world!
 
-name = "Oleg"
-hello_string = f"Hello, {name}!"
+# name = "Oleg"
+# hello_string = f"Hello, {name}!"
 
-print(hello_string)  # Hello, Oleg!
+# print(hello_string)  # Hello, Oleg!
 
 
 # ===================================================  Тип None
-connect_to_database = None
+# connect_to_database = None
 
 
 # ===================================================  Колекції
@@ -163,20 +163,20 @@ print(chars)  # ['cherry', 'apple', 'banana']
 # ========================            Словники      dict = {}
 
 
-my_dict = {"name": "Alice", "age": 25, "city": "New York"}
-print(my_dict["name"])  # 'Alice'
+# my_dict = {"name": "Alice", "age": 25, "city": "New York"}
+# print(my_dict["name"])  # 'Alice'
 
-my_dict["age"] = 26
-print(my_dict)  # {'name': 'Alice', 'age': 26, 'city': 'New York'}
+# my_dict["age"] = 26
+# print(my_dict)  # {'name': 'Alice', 'age': 26, 'city': 'New York'}
 
-my_dict['email'] = 'qwerty@wwe.qww'
-# {'name': 'Alice', 'age': 26, 'city': 'New York', 'email': 'qwerty@wwe.qww'}
-print(my_dict)
+# my_dict['email'] = 'qwerty@wwe.qww'
+# # {'name': 'Alice', 'age': 26, 'city': 'New York', 'email': 'qwerty@wwe.qww'}
+# print(my_dict)
 
-del my_dict['email']
-print(my_dict)  # {'name': 'Alice', 'age': 26, 'city': 'New York'}
+# del my_dict['email']
+# print(my_dict)  # {'name': 'Alice', 'age': 26, 'city': 'New York'}
 
-print("name" in my_dict)  # True
+# print("name" in my_dict)  # True
 
 # ========================  Методи словників
 # pop
@@ -185,17 +185,17 @@ print("name" in my_dict)  # True
 # copy()
 # get()
 
-my_dict = {"name": "Alice", "age": 25}
-age = my_dict.get("age")  # 25
-gender = my_dict.get("gender")  # None, оскільки "gender" немає в словнику
+# my_dict = {"name": "Alice", "age": 25}
+# age = my_dict.get("age")  # 25
+# gender = my_dict.get("gender")  # None, оскільки "gender" немає в словнику
 
 
 # ========================  Множини
 
 
-empty_set = set()  # щоб створити
-a = set('hello')
-b = {1, 2, 3, 4, 5}
+# empty_set = set()  # щоб створити
+# a = set('hello')
+# b = {1, 2, 3, 4, 5}
 
 
 # numbers = {1, 2, 3, 1, 2, 3, 7}
@@ -214,36 +214,36 @@ b = {1, 2, 3, 4, 5}
 # numbers.remove(3)
 # print(numbers)  # {1, 2}
 
-numbers = {1, 2, 3}
-numbers.discard(3)
-print(numbers)  # {1, 2}
+# numbers = {1, 2, 3}
+# numbers.discard(3)
+# print(numbers)  # {1, 2}
 
 
-# ===========================        Кортежі
+# # ===========================        Кортежі
 
-my_tuple = tuple()  # або
-my_tuple = ()
+# my_tuple = tuple()  # або
+# my_tuple = ()
 
-my_tuple = (1, 2, 3)
+# my_tuple = (1, 2, 3)
 
 # n========================
-"123".isdigit()  # True
-"hello".isalpha()  # True
-" ".isspace()  # True
+# "123".isdigit()  # True
+# "hello".isalpha()  # True
+# " ".isspace()  # True
 
 
 # n======================== Slice
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-odd_numbers = numbers[0:1:1]
-print(odd_numbers)
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# odd_numbers = numbers[0:1:1]
+# print(odd_numbers)
 
-odd_numbers = numbers[0:10:2]
-print(odd_numbers)  # [1, 3, 5, 7, 9]
+# odd_numbers = numbers[0:10:2]
+# print(odd_numbers)  # [1, 3, 5, 7, 9]
 
-print(numbers)
+# print(numbers)
 
-print(odd_numbers)  # [1, 3, 5, 7, 9]
+# print(odd_numbers)  # [1, 3, 5, 7, 9]
 
 
 # message = "Hello world!"
@@ -354,6 +354,15 @@ print(odd_numbers)  # [1, 3, 5, 7, 9]
 
 
 # ==========================================
-a = list[1, 2, 3, 5]
-print(a)
-print(type(a))
+# a = list[1, 2, 3, 5]
+# print(a)
+# print(type(a))
+
+# ==========================================
+pi_str = str(3.14)
+print(pi_str)
+print(type(pi_str)) # <class 'str'>
+
+age_str = str(29)
+print(age_str)
+
