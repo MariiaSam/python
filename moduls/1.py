@@ -155,10 +155,10 @@
 
 # ========================                  reverse()
 
-chars = ["banana", "apple", "cherry"]
-chars.reverse()
+# chars = ["banana", "apple", "cherry"]
+# chars.reverse()
 
-print(chars)  # ['cherry', 'apple', 'banana']
+# print(chars)  # ['cherry', 'apple', 'banana']
 
 # ========================            Словники      dict = {}
 
@@ -359,10 +359,16 @@ print(chars)  # ['cherry', 'apple', 'banana']
 # print(type(a))
 
 # ==========================================
-pi_str = str(3.14)
-print(pi_str)
-print(type(pi_str)) # <class 'str'>
+# pi_str = str(3.14)
+# print(pi_str)
+# print(type(pi_str)) # <class 'str'>
 
-age_str = str(29)
-print(age_str)
+# age_str = str(29)
+# print(age_str)
 
+# ==========================================
+
+my_dict = {"name": "Alice", "age": 25}
+age = my_dict.pop("age")
+print(my_dict) # {'name': 'Alice'}
+print(age) # 25
