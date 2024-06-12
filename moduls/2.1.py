@@ -128,6 +128,7 @@
 #     case _:
 #         print("Unknown fruit.")
 
+# This is an apple.
 
 # ==============================
 # point = (1, 0)
@@ -144,6 +145,7 @@
 #     case _:
 #         print("Це не точка")
 
+# Точка лежить на осі X: x=1
 # ==============================       Цикли
 # fruit = 'apple'
 # for i in fruit:
@@ -265,15 +267,15 @@
 
 #=============================== Цикли та словники
 
-numbers = {
-    1: "one",
-    2: "two",
-    3: "three"
-}
+# numbers = {
+#     1: "one",
+#     2: "two",
+#     3: "three"
+# }
 
 
-for i in numbers:
-    print(i)
+# for i in numbers:
+#     print(i)
 
 # 1
 # 2
@@ -281,43 +283,100 @@ for i in numbers:
 
 #=============================== 
 
-for i in numbers.keys():
-    print(i)
+# for i in numbers.keys():
+#     print(i)
 # 1
 # 2
 # 3
 
 #=============================== 
 
-for i in numbers.values():
-    print(i)
+# for i in numbers.values():
+#     print(i)
 
 # one
 # two
 # three
 
 #=============================== 
-for i in numbers.items():
-    print(i)
+# for i in numbers.items():
+#     print(i)
 
 # (1, 'one')
 # (2, 'two')
 # (3, 'three')
 
-for key, value in numbers.items():
-    print(key, value)
+# for key, value in numbers.items():
+#     print(key, value)
 # 1 one
 # 2 two
 # 3 three
 
 
 # ==================================
-val = 'a'
-try:
-    val = int(val)
-except ValueError:
-    print(f"val {val} is not a number")
-else:
-    print(val > 0)
-finally:
-    print("This will be printed anyway")
+# val = 'a'
+# try:
+#     val = int(val)
+# except ValueError:
+#     print(f"val {val} is not a number")
+# else:
+#     print(val > 0)
+# finally:
+#     print("This will be printed anyway")
+
+# ===========================================
+# money = 0
+# if money:
+#     print(f"You have {money} on your bank account")
+# else:
+#     print("You have no money and no debts")
+
+# You have no money and no debts
+# ===========================================
+
+# print(False and False) # False
+ # ===========================================
+
+# is_nice = True
+# state = "nice" if is_nice else "not nice"
+# print(state) # nice
+ # ===========================================
+
+# some_data = None
+# msg = some_data or "Не було повернено даних"
+# print(msg) # Не було повернено даних
+
+ # ===========================================
+
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+# for char in alphabet:
+#     print(char, end=" ") # a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+# a = 0
+# while True:
+#     print(a)
+#     if a >= 20:
+#         break
+#     a = a + 1
+
+def print_max(a, b):
+    if a > b:
+        print(a, 'максимально')
+    elif a == b:
+        print(a, 'дорівнює', b)
+    else:
+        print(b, 'максимально') 
+
+print_max(3, 4)  # 4 максимально
+
+x = 5
+y = 7
+print_max(x, y)  # передача змінних у якості аргументів
+
+a = 10
+ф = a
+print(id(a))
+print(id(ф))
+ф = 9
+print(id(ф))
+
