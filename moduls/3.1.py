@@ -159,22 +159,100 @@
 # %b або %h - скорочена назва місяця (наприклад, Mar).
 # %p - AM або PM для 12-годинного формату.
 
-from datetime import datetime
+# from datetime import datetime
 
-now = datetime.now()
+# now = datetime.now()
 
-# Форматування дати і часу
-formatted_date = now.strftime("%Y-%m-%d %H:%M:%S") 
-print(formatted_date) # 2024-06-13 13:01:29
+# # Форматування дати і часу
+# formatted_date = now.strftime("%Y-%m-%d %H:%M:%S") 
+# print(formatted_date) # 2024-06-13 13:01:29
 
-# Форматування лише дати
-formatted_date_only = now.strftime("%A, %d %B %Y")
-print(formatted_date_only) # Thursday, 13 June 2024
+# # Форматування лише дати
+# formatted_date_only = now.strftime("%A, %d %B %Y")
+# print(formatted_date_only) # Thursday, 13 June 2024
 
-# Форматування лише часу
-formatted_time_only = now.strftime("%I:%M %p")
-print(formatted_time_only) # 01:01 PM
+# # Форматування лише часу
+# formatted_time_only = now.strftime("%I:%M %p")
+# print(formatted_time_only) # 01:01 PM
 
-# Форматування лише дати
-formatted_date_only = now.strftime("%d.%m.%Y")
-print(formatted_date_only) # 13.06.2024
+# # Форматування лише дати
+# formatted_date_only = now.strftime("%d.%m.%Y")
+# print(formatted_date_only) # 13.06.2024
+
+# ============================================= Метод strptime в Python використовується для перетворення рядків у об'єкти datetime.
+
+# datetime_object = datetime.strptime(string, format)
+
+# from datetime import datetime
+
+# date_str = '2024.06.13'
+
+# datetime_obj = datetime.strptime(date_str, "%Y.%m.%d")
+# print(datetime_obj)
+
+# 2024-06-13 00:00:00
+
+# ============================================== Робота з ISO форматом дати
+
+# Формат дати в ISO 8601 виглядає як "YYYY-MM-DD", де:
+
+# YYYY - це рік (наприклад, 2023),
+# MM - місяць (наприклад, 01 для січня),
+# DD - день (наприклад, 31).
+
+# Формат часу в ISO 8601 виглядає як "HH:MM:SS", де:
+
+
+
+# HH - години (від 00 до 23),
+# MM - хвилини (від 00 до 59),
+# SS - секунди (від 00 до 59, іноді з додатковими десятковими частинами для мікросекунд).
+
+# from datetime import datetime
+
+# now = datetime.now()
+
+# iso_format = now.isoformat()
+# print(iso_format) # 2024-06-13T19:00:44.039331
+
+# =============================================
+# from datetime import datetime
+
+# iso_date_string = "2023-03-14T12:39:29.992996"
+
+# # Конвертація з ISO формату
+# date_from_iso = datetime.fromisoformat(iso_date_string)
+# print(date_from_iso) # 2023-03-14 12:39:29.992996
+
+# =============================================
+#isoweekday() - день тижня
+
+
+# =============================================
+#isocalendar() - д(ISO_рік, ISO_тиждень, ISO_день_тижня),
+
+# from datetime import datetime
+
+# # Створення об'єкта datetime
+# now = datetime.now()
+
+# # Отримання ISO календаря
+# iso_calendar = now.isocalendar()
+
+# print(f"ISO рік: {iso_calendar[0]}, ISO тиждень: {iso_calendar[1]}, ISO день тижня: {iso_calendar[2]}")
+# ISO рік: 2024, ISO тиждень: 24, ISO день тижня: 4
+
+# ============================================= часові зони
+# from datetime import datetime, timezone
+
+# local_now = datetime.now()
+# utc_now = datetime.now(timezone.utc)
+
+# print(local_now) # 2024-06-13 19:10:34.288404
+# print(utc_now)  # Виведе поточний час в UTC 2024-06-13 16:10:34.288408+00:00
+
+a = int(input("Input 'a':  "))
+b = int(input("Input 'b':  "))
+
+print(-b / a)
+
