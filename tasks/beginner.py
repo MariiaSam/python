@@ -427,4 +427,37 @@
 
 # 77339
 
-# [================================================]
+# [================================================] Osadchuk
+
+# Скласти програму обчислення суми модулів трьох дійсних чисел
+
+# value_one = 5
+# value_two = 7
+# value_three = -19
+
+# """
+# 57 -> 57
+# -99 -> 99
+# """
+
+# summary = 0
+# summary += abs(value_one)
+# print(summary) # 5
+# summary += abs(value_two)
+# print(summary) # 12
+# summary += abs(value_three)
+# print(summary) # 31
+
+[================================================] Osadchuk
+# Скласти програму визначення номера під'їзду та поверху квартири за заданим номером квартири. У будинку 5 поверхів і 4 квартири на поверсі.
+ 
+# FLOOR = 5
+# APARTMENTS_PER_FLOOR = 4
+
+# apartent_number = int(input('Введіть номер квартири: '))
+# apartents_per_entrance = FLOOR * APARTMENTS_PER_FLOOR # кіл-сть кв в підʼїзді
+# entrance_number = (apartent_number - 1) // apartents_per_entrance + 1 # який підʼїзд
+# print(entrance_number)
+# floor_number = ((apartent_number - 1) % apartents_per_entrance) // APARTMENTS_PER_FLOOR + 1 
+# print(floor_number)
+
