@@ -448,7 +448,7 @@
 # summary += abs(value_three)
 # print(summary) # 31
 
-[================================================] Osadchuk
+#№[================================================] Osadchuk
 # Скласти програму визначення номера під'їзду та поверху квартири за заданим номером квартири. У будинку 5 поверхів і 4 квартири на поверсі.
  
 # FLOOR = 5
@@ -461,3 +461,41 @@
 # floor_number = ((apartent_number - 1) % apartents_per_entrance) // APARTMENTS_PER_FLOOR + 1 
 # print(floor_number)
 
+#№[================================================] M. Chernyshov
+# Зчитати числа із консолі через кому, вивесту суму
+
+# numbers_str = input("Enter numbers: ")
+# numbers_list = numbers_str.split(",")
+# numbers_int = list(map(int, numbers_list))
+
+# print("numbers_str", numbers_str)
+# print("numbers_list", numbers_list)
+# print("numbers_int", numbers_int)
+# print(type(numbers_int)) # <class 'list'>
+# print(type(sum(numbers_int))) # <class 'int'>
+
+##№[================================================] Osadchuk 
+# Перевірка паролю для пропуску на сайт
+
+# entry = input("Enter password: ")
+
+# if entry is 'test2024':
+#     print('Access Granted')
+# else:
+#     print('Access Denied') # IS !!!!! не однакові комірки памʼяті
+
+# if entry == 'test2024':
+#     print('Access Granted')
+# else:
+#     print('Access Denied')
+##№[================================================] Osadchuk 
+
+# Перевірка балансу для здійснення покупки
+
+balance = 0.7 + 0.6
+print(balance)
+if round(balance, 1) == 1.3:
+    print('Enough')
+else:
+    print('Not Enough')
+print(round(balance, 1))
