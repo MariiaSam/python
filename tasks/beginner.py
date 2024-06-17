@@ -492,10 +492,63 @@
 
 # Перевірка балансу для здійснення покупки
 
-balance = 0.7 + 0.6
-print(balance)
-if round(balance, 1) == 1.3:
-    print('Enough')
-else:
-    print('Not Enough')
-print(round(balance, 1))
+# balance = 0.7 + 0.6
+# print(balance)
+# if round(balance, 1) == 1.3:
+#     print('Enough')
+# else:
+#     print('Not Enough')
+# print(round(balance, 1))
+
+##№[================================================] Osadchuk 
+# Використання тернарного оператора для визначення парності або непарності числа
+
+# value_x, value_y = 5, 5
+
+# if value_x > value_y:
+#     print(value_x)
+# else:
+#     print(value_y)
+
+# max_value = value_x if value_x > value_y else value_y
+# print(max_value)
+
+# max_value = 'X > Y' if value_x > value_y else "X < Y"
+# print(max_value)
+
+# max_value = 'X > Y' if value_x > value_y else "X < Y" if value_x < value_y else "X = Y"
+# print(max_value)
+
+# max_value = 'X = 0 or Y = 0' if value_x == 0 or value_y == 0 else "X != 0 and Y != 0"
+# print(max_value)
+
+
+##№[================================================] Osadchuk
+# 
+# Перевірити чи всі значення першої строки знаходяться в другій строці
+
+# Input: s = "abc", t = "ahbgdc" Output: true
+
+# Input: s = "axc", t = "ahbgdc" Output: false 
+
+# string_one = input('Enter string: ')
+# string_two = input('Enter string to compare: ')
+
+# for char in string_one:
+#     if char not in string_two:
+#         print(False)
+#         break
+# else:
+#     print(True)
+
+##№[================================================] Osadchuk
+'''
+У математиці послідовність Фібоначчі - це послідовність, у якій кожне число є сумою двох попередніх. За визначенням, перші два числа в послідовності Фібоначчі є або 1 і 1, або 0 і 1, залежно від обраного початку, а кожне наступне число є сумою двох попередніх.
+'''
+# num_one, num_two = 0, 1
+
+# for _ in range(10):
+#     print(num_one, end=' ')
+#     num_one, num_two = num_two, num_one + num_two
+
+##№[================================================] Osadchuk
