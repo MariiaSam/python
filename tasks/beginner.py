@@ -580,15 +580,35 @@
 
 ##№[================================================] Osadchuk
 
-x = 10
-print(x) # 10
+# x = 10
+# print(x) # 10
 
-def foo():
-    global x
-    print(x) # 10
-    x = 5
-    print(x) # 5
+# def foo():
+#     global x
+#     print(x) # 10
+#     x = 5
+#     print(x) # 5
 
 
-foo()
-print(x) # 5
+# foo()
+# print(x) # 5
+
+
+##№[================================================] Osadchuk
+
+# Записати у довідник кількість кожного елемента, який передається у строці
+def char_counter(sentence): # Приймає на вхід строку
+    operator_dict = dict() # створюєио пустий словник, ключ -- буква, значення -- к-ть повторень
+
+    for char in sentence: # проходимось по всіх елементах строки
+        if char not in operator_dict.keys(): # перевіряємо чи конкретоний строки вже є в словнику
+            operator_dict[char] = 1 # добавляємо в словник і присвоюємо 1 як повторення
+        else: # в іншому випадку
+            operator_dict[char] += 1 # збільшуємо значення цього елементу на 1
+    return operator_dict # повертаємо словник
+
+user_input = input("Enter sentence: ")
+
+print(char_counter(user_input))
+print(char_counter(user_input).keys())
+print(char_counter(user_input).values())
