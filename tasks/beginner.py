@@ -553,16 +553,42 @@
 
 ##№[================================================] Osadchuk
 # Розрахунок суми всіх чисел, що подаються через *args
-def sum_af_all_numbers(*numbers): # *args -> (2,3,4,5,6,7,7)
-    print(numbers)
-    sum = 0
-    for value in numbers:
-        try:
-            sum += float(value)
-        except TypeError:
-            continue
-        except ValueError:
-            continue
-    return sum
+# def sum_af_all_numbers(*numbers): # *args -> (2,3,4,5,6,7,7)
+#     print(numbers)
+#     sum = 0
+#     for value in numbers:
+#         try:
+#             sum += float(value)
+#         except TypeError:
+#             continue
+#         except ValueError:
+#             continue
+#     return sum
 
-print(sum_af_all_numbers(1,2,3,4,5,'1000',6,7,8,9,0, 7.7, 'true', False, 90, -100, sum([1,2,3,4,99])))
+# print(sum_af_all_numbers(1,2,3,4,5,'1000',6,7,8,9,0, 7.7, 'true', False, 90, -100, sum([1,2,3,4,99])))
+
+##№[================================================] Osadchuk
+
+# def fnc(a, **b):
+#     sum = 0
+#     for k in b:
+#         sum += b[k]
+#     return sum
+
+# result = fnc(10, k=1, m=2, n=3, j=4)
+# print(result) # 10
+
+##№[================================================] Osadchuk
+
+x = 10
+print(x) # 10
+
+def foo():
+    global x
+    print(x) # 10
+    x = 5
+    print(x) # 5
+
+
+foo()
+print(x) # 5
