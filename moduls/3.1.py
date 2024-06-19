@@ -251,8 +251,41 @@
 # print(local_now) # 2024-06-13 19:10:34.288404
 # print(utc_now)  # Виведе поточний час в UTC 2024-06-13 16:10:34.288408+00:00
 
-a = int(input("Input 'a':  "))
-b = int(input("Input 'b':  "))
+# a = int(input("Input 'a':  "))
+# b = int(input("Input 'b':  "))
 
-print(-b / a)
+# print(-b / a)
 
+
+
+
+# ============================================= 
+
+# from datetime import datetime
+
+# current_hour = datetime.now().hour
+
+# print(current_hour)
+
+# ============================================= 
+
+# from datetime import datetime
+
+# # Поточний час
+# now = datetime.now()
+
+# # Конвертація datetime в timestamp
+# t = datetime.timestamp(now)
+# print(t)  # Виведе timestamp поточного часу
+
+# ============================================= 
+
+# from datetime import datetime
+
+# # Створення об'єкта datetime
+# now = datetime.now().isoweekday()
+
+# # Використання isoweekday() для отримання дня тижня
+# # day_of_week = now.isoweekday()
+
+# print(f"Сьогодні: {now}")  # Поверне число від 1 до 7, що відповідає дню тижня
