@@ -85,3 +85,17 @@
 # print(str.translate(trantab))
 
 # Th3s 3s str3ng 2x1mpl2
+
+# ========================================================
+from datetime import datetime
+
+
+def string_to_date(date_string):
+    converted_date = datetime.strptime(date_string, '%Y.%m.%d')
+    return converted_date
+
+
+def date_to_string(date):
+    now = datetime.date()
+    date_string = date.strftime(date, '%Y.%m.%d')
+    return date_string
