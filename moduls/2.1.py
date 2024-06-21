@@ -387,3 +387,16 @@
 # print(msg) # Не було повернено даних
 
 # ==========================================
+# a = 33
+# b = 200
+# if a > b:
+#   print("a is NOT greater than b")
+# else:
+#   print(f"{b} більше за {a}") # 200 більше за 33
+
+# a = 33
+# b = 200
+# if not a > b:
+#   print(f"{a} is NOT greater than {b}") # 33 is NOT greater than 200
+# else:
+#   print(f"{b} більше за {a}")
