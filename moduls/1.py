@@ -368,7 +368,11 @@
 
 # ==========================================
 
-my_dict = {"name": "Alice", "age": 25}
-age = my_dict.pop("age")
-print(my_dict) # {'name': 'Alice'}
-print(age) # 25
+# my_dict = {"name": "Alice", "age": 25}
+# age = my_dict.pop("age")
+# print(my_dict) # {'name': 'Alice'}
+# print(age) # 25
+
+# ==========================================
+# print( 10 // 2) # 5
+# print( 10 // 2.0) # 5.0

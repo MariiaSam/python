@@ -359,24 +359,31 @@
 #         break
 #     a = a + 1
 
-def print_max(a, b):
-    if a > b:
-        print(a, 'максимально')
-    elif a == b:
-        print(a, 'дорівнює', b)
-    else:
-        print(b, 'максимально') 
+# def print_max(a, b):
+#     if a > b:
+#         print(a, 'максимально')
+#     elif a == b:
+#         print(a, 'дорівнює', b)
+#     else:
+#         print(b, 'максимально') 
 
-print_max(3, 4)  # 4 максимально
+# print_max(3, 4)  # 4 максимально
 
-x = 5
-y = 7
-print_max(x, y)  # передача змінних у якості аргументів
+# x = 5
+# y = 7
+# print_max(x, y)  # передача змінних у якості аргументів
 
-a = 10
-ф = a
-print(id(a))
-print(id(ф))
-ф = 9
-print(id(ф))
+# a = 10
+# ф = a
+# print(id(a))
+# print(id(ф))
+# ф = 9
+# print(id(ф))
 
+# ==========================================
+
+# some_data = None
+# msg = some_data or "Не було повернено даних"
+# print(msg) # Не було повернено даних
+
+# ==========================================
