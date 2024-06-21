@@ -105,15 +105,34 @@
 
 # ========================================================
 # 2.
-from datetime import datetime
+# from datetime import datetime
 
 
-def string_to_date(date_string):
-    return datetime.strptime(date_string, "%Y.%m.%d").date()
+# def string_to_date(date_string):
+#     return datetime.strptime(date_string, "%Y.%m.%d").date()
 
 
-def prepare_user_list(user_data):
-    p
+# def prepare_user_list(user_data):
+#     prepared_list = []
+#     for user in user_data:
+#         name = user["name"]
+#         birthday_str = user["birthday"]
+#         birthday_date = string_to_date(birthday_str)
+#         prepared_list.append({"name": name, "birthday": birthday_date})
+#     return prepared_list
     
+    
+
+# users = [
+#     {"name": "Bill Gates", "birthday": "1955.3.25"},
+#     {"name": "Steve Jobs", "birthday": "1955.3.21"},
+#     {"name": "Jinny Lee", "birthday": "1956.3.22"},
+#     {"name": "John Doe", "birthday": "1985.01.23"},
+#     {"name": "Jane Smith", "birthday": "1990.01.27"}
+# ]
+
+# prepared_users = prepare_user_list(users)
+# print(prepared_users)
         
-    
+    # ========================================================
+# 3.
