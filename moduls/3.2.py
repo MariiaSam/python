@@ -87,15 +87,33 @@
 # Th3s 3s str3ng 2x1mpl2
 
 # ========================================================
+# 1.
+# from datetime import datetime
+
+
+# def string_to_date(date_string):
+#     converted_date = datetime.strptime(date_string, '%Y.%m.%d')
+#     conv = datetime.date(converted_date) 
+#     return conv
+    
+# def date_to_string(date):
+#     date_string = date.strftime('%Y.%m.%d')
+#     return date_string
+
+# print(string_to_date("2024.01.01"))
+# print(date_to_string(2024-01-01))
+
+# ========================================================
+# 2.
 from datetime import datetime
 
 
 def string_to_date(date_string):
-    converted_date = datetime.strptime(date_string, '%Y.%m.%d')
-    return converted_date
+    return datetime.strptime(date_string, "%Y.%m.%d").date()
 
 
-def date_to_string(date):
-    now = datetime.date()
-    date_string = date.strftime(date, '%Y.%m.%d')
-    return date_string
+def prepare_user_list(user_data):
+    p
+    
+        
+    
