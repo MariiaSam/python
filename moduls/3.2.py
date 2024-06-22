@@ -93,9 +93,9 @@
 
 # def string_to_date(date_string):
 #     converted_date = datetime.strptime(date_string, '%Y.%m.%d')
-#     conv = datetime.date(converted_date) 
+#     conv = datetime.date(converted_date)
 #     return conv
-    
+
 # def date_to_string(date):
 #     date_string = date.strftime('%Y.%m.%d')
 #     return date_string
@@ -120,8 +120,7 @@
 #         birthday_date = string_to_date(birthday_str)
 #         prepared_list.append({"name": name, "birthday": birthday_date})
 #     return prepared_list
-    
-    
+
 
 # users = [
 #     {"name": "Bill Gates", "birthday": "1955.3.25"},
@@ -133,6 +132,17 @@
 
 # prepared_users = prepare_user_list(users)
 # print(prepared_users)
-        
-    # ========================================================
+
+# ========================================================
 # 3.
+# from datetime import datetime, timedelta
+
+# def string_to_date(date_string):
+#     return datetime.strptime(date_string, "%Y.%m.%d").date()
+
+# def find_next_weekday(start_date, weekday):
+#     days_ahead = weekday - start_date.weekday()
+#     if days_ahead <= 0: 
+#         days_ahead += 7
+#     return start_date + timedelta(days=days_ahead)
+
