@@ -289,3 +289,24 @@
 # # day_of_week = now.isoweekday()
 
 # print(f"Сьогодні: {now}")  # Поверне число від 1 до 7, що відповідає дню тижня
+# ============================================= 
+# from datetime import datetime
+
+# now = datetime.now()
+
+# print(now) # 2024-06-23 15:24:41.380735
+
+# parse = now.strftime("%A, %d %B %Y")
+# print(parse) # June:2024
+
+# year = datetime.now().year
+# day = datetime.now().day
+# day = datetime.now().date()
+
+# day = datetime.now().time()
+
+# print(year)
+# print(day)
+
+# now = datetime.now().weekday()
+# print(now)
