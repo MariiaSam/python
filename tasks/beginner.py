@@ -746,3 +746,40 @@ Congratulations! That is a great average!
 
 12
 '''
+
+
+# number_a = int(input("Enter first number from 1 to 1000: "))
+# number_b = int(input("Enter second number from 1 to 1000: "))
+
+# if number_a > number_b:
+#     print(number_a)
+# else:
+#     print(number_b)
+
+##№[================================================] 
+
+'''
+Користувач вводить значення температури t у градусах Цельсія. Напишіть програму, яка виводить назву стану, у якому знаходиться вода при цій температурі за нормальних умов.
+Вхідні дані:
+
+-10.5
+25
+120
+Вихідні дані:
+
+ice
+water
+water vapor
+
+'''
+
+# temperature = float(input("Введіть значення температури (°C): "))
+
+# if temperature >= 0:
+#     if temperature >= 100:
+#         print("Водяна пара")
+#     else:
+#         print("Вода")
+# else:
+#     print("Лід")
+
