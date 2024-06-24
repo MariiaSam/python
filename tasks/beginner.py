@@ -783,4 +783,52 @@ water vapor
 # else:
 #     print("Лід")
 
+##№[================================================] Osadchuk
+
+
 ##№[================================================] 
+'''
+ лікар прописала пацієнтові приймати ліки протягом 45 днів. Треба знайти дату закінчення приймання ліків від поточної дати.
+'''
+
+# from datetime import datetime, timedelta
+
+# current_date = datetime.now()
+# print(current_date)
+
+# interval = timedelta(days=45)
+# day_on = current_date-interval 
+# day_off = (current_date+interval) # 2024-08-08 10:37:57.371262
+# print(day_on) 
+# print(day_off) # 2024-08-08 10:37:57.371262
+# count_days = day_off-day_on
+# print(count_days.days) 
+
+##№[================================================] Osadchuk
+# from datetime import datetime
+
+# current_date = datetime.now()
+# print(current_date.timestamp())
+
+# day_zero = datetime.fromtimestamp(0)
+# print(day_zero)
+# print(current_date > day_zero)
+
+# datetime_string = '1970:01:01 January Jan 02 02 00'
+
+# print(datetime.strptime(datetime_string, '%Y:%m:%d %B %b %H %I %M')) # 1970-01-01 02:00:00
+# print(current_date.strftime('%Y-%m:%d'), current_date) # 2024-06:24 2024-06-24 11:40:00.454969
+##№[================================================] Osadchuk
+
+from datetime import datetime
+
+current_date = '2024-05-01'
+
+requested_day = datetime.strptime(current_date, '%Y-%m-%d').date()
+print(requested_day)
+
+today_date = datetime.now().date()
+print(today_date)
+diff_day = today_date - requested_day
+print('days', diff_day.days)
+print('weeks', round(diff_day.days // 7))
