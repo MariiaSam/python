@@ -820,15 +820,25 @@ water vapor
 # print(current_date.strftime('%Y-%m:%d'), current_date) # 2024-06:24 2024-06-24 11:40:00.454969
 ##№[================================================] Osadchuk
 
-from datetime import datetime
+# from datetime import datetime
 
-current_date = '2024-05-01'
+# current_date = '2024-05-01'
 
-requested_day = datetime.strptime(current_date, '%Y-%m-%d').date()
-print(requested_day)
+# requested_day = datetime.strptime(current_date, '%Y-%m-%d').date()
+# print(requested_day)
 
-today_date = datetime.now().date()
-print(today_date)
-diff_day = today_date - requested_day
-print('days', diff_day.days)
-print('weeks', round(diff_day.days // 7))
+# today_date = datetime.now().date()
+# print(today_date)
+# diff_day = today_date - requested_day
+# print('days', diff_day.days)
+# print('weeks', round(diff_day.days // 7))
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++ 
+
+fruits = {'apple': 2, "pear": 3, "banana": 8}
+
+for key in fruits:
+    list1 = []
+    return list1.append(key)
+    
