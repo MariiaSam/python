@@ -118,5 +118,42 @@ position = fh.tell() знову отримує поточну позицію к�
 # with open('raw_data.bin', 'wb') as fh:
 #     fh.write(b'Hello world!')
 
-s = b'Hello!'
-print(s[1])  # Виведе: 101 (це ASCII-код символу 'e')
+# s = b'Hello!'
+# print(s[1])  # Виведе: 101 (це ASCII-код символу 'e')
+
+
+# byte_string = b'Hello world!'
+# print(byte_string)
+
+# byte_str = 'some text'.encode()
+# print(byte_str) # b'some text'.
+
+
+# Перетворення списку чисел у байт-рядок
+# numbers = [0, 128, 255]
+# byte_numbers = bytes(numbers)
+# print(byte_numbers)  # b'\x00\x80\xff'
+
+
+# from pathlib import Path
+
+# # Створення об'єкту Path для файлу
+# file_path = Path("test.txt")
+
+# # Запис тексту у файл
+# file_path.write_text("Привіт світ!", encoding="utf-8")
+
+# text = file_path.read_text(encoding="utf-8")
+# print(text) # Привіт світ!
+
+# ===============================================
+from pathlib import Path
+
+# Створення об'єкту Path для бінарного файлу
+file_path = Path("example.bin")
+
+# Бінарні дані для запису
+data = b"Python is great!"
+
+# Запис байтів у файл
+file_path.write_bytes(data)
