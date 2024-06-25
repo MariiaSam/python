@@ -836,9 +836,3 @@ water vapor
 
 # ++++++++++++++++++++++++++++++++++++++++++++++ 
 
-fruits = {'apple': 2, "pear": 3, "banana": 8}
-
-for key in fruits:
-    list1 = []
-    return list1.append(key)
-    
