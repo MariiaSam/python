@@ -10,7 +10,6 @@
 # sin_pi = sin(pi)
 
 
-
 # ====================================
 # def say_hello(name):
 #     print(f'Hello, {name}')
@@ -19,5 +18,7 @@
 # say_hello('user')
 
 
+# import sys
 
-
+# for arg in sys.argv:
+#     print(arg)
