@@ -81,15 +81,19 @@
 
 #========================================= Створення директорії
 
+# from pathlib import Path
+
+# new_dir = Path('ABC')
+
+# if not new_dir.exists():
+#     new_dir.mkdir()
+
+# new_dir.mkdir(exist_ok=True)
+#========================================= Створення вкладених директорії
 from pathlib import Path
 
-new_dir = Path('ABC')
-
-if not new_dir.exists():
-    new_dir.mkdir()
-
-new_dir.mkdir(exist_ok=True)
-#========================================= 
+new_dir = Path('ABCD/temps/check/exist')
+new_dir.mkdir(exist_ok=True, parents=True)
 
 #========================================= 
 
