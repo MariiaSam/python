@@ -172,3 +172,21 @@ print(string, end=',' )
 #         days_ahead += 7
 #     return start_date + timedelta(days=days_ahead)
 
+# ========================================================
+# def fnc(n):
+#     if n == 3:
+#         return 3
+#     return fnc(n-1) + n
+
+# result = fnc(5)
+# print(result)
+
+# ========================================================
+# d = {'k': 3}
+# print(list(d.keys()))
+
+def f(n):
+    return n * f(n-1)
+
+# re = f(3)
+re = f(0)
