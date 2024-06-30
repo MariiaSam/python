@@ -421,3 +421,33 @@ print(float(number))
 
 
 #========================================= 
+
+# text = 'Lorem ipsum is simply'
+# dict_count = {}
+
+
+# for char in text:
+#     try:
+#        count = dict_count[char] # отримуємо значення по ключу
+       
+#     except KeyError:
+#         count = 0
+#     count += 1
+#     dict_count[char] = count # записуємо значення по ключу
+
+# print(dict_count)
+
+   # {'L': 1, 'o': 1, 'r': 1, 'e': 1, 'm': 3, ' ': 3, 'i': 3, 'p': 2, 's': 3, 'u': 1, 'l': 1, 'y': 1}
+
+   # or
+
+# text = 'Lorem ipsum is simply'
+# dict_count = {}
+
+# for char in text:
+#        count = dict_count.get(char, 0) # отримуємо значення по ключу
+#        count += 1
+#        dict_count[char] = count # записуємо значення по ключу
+
+# print(dict_count)
+# # {'L': 1, 'o': 1, 'r': 1, 'e': 1, 'm': 3, ' ': 3, 'i': 3, 'p': 2, 's': 3, 'u': 1, 'l': 1, 'y': 1}
