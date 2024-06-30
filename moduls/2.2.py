@@ -387,8 +387,37 @@
 # def number_of_groups(n, k):
 #     return factorial(n) // (factorial(n - k) * factorial(k))
 
+#=============================================
 
 
-    
-    
-    
+'''
+Незмінні типи в Python — це ті, що не можуть бути змінені після їх створення. Це включає типи, як-от цілі числа int, дійсні числа float, рядки str, кортежі tuple.
+
+
+'''
+number = 1
+print(number)
+
+print(float(number))
+
+#========================================= Розпакування списків та словників
+
+# def greet(name, age):
+#     print(f"Hello {name}, you are {age} years old.")
+
+# person_info = {"name": "Alice", "age": 25}
+# greet(**person_info)
+#================================
+
+# my_list = [1, 2, 3]
+# a, b, c = my_list
+# print(my_list)
+
+# a, _, c = my_list
+# print(my_list)
+
+# a, *rest = my_list
+# print(my_list)
+
+
+#========================================= 
