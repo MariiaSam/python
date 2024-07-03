@@ -379,3 +379,193 @@
 
 # ==========================================
 
+# print(0 > 10 and 5 > 2)
+
+# str_1 = '2'
+# str_2 = '0'
+# print(str_1 + str_2) # 20
+
+# str_3 = '6'
+# str_4 = '6'
+# print(str_3 + str_4) # 66
+
+# ==========================================
+
+# num = 8941 % 931
+
+# if num % 2 == 0:
+
+#   print("The number num is", 'Even') # The number num is Even
+
+# else:
+
+#   print("The number num is", 'Odd')
+
+'''
+len(t) - returns the length of list t, or in other words, the number of items it contains;
+list1 + list2 - combines two lists (both must be lists);
+t * n - creates n duplicates of list t;
+t.append(x) - adds a single item x to the end of list t (this alters the original list);
+t.extend([x, y, ...]) - appends elements x, y, ... to the end of list t (this also modifies the original list);
+t.copy() - produces a duplicate of the list t;
+t.count(x) - tallies the number of occurrences of x in list t.
+'''
+
+
+# # Two-dimensional list
+# countries_2d = [['USA', 9629091], ['Canada', 9984670], ['Germany', 357114]]
+
+# # Pull elements
+# print(countries_2d[1]) # ['Canada', 9984670]
+
+# print(countries_2d[1][0]) # Canada
+
+#============================================
+
+# # Two-dimensional tuple
+# two_d_countries = (('USA', 9629091, 331002651), ('Canada', 9984670, 37742154), 
+#                    ('Germany', 357114, 83783942), ('Brazil', 8515767, 212559417), 
+#                    ('India', 3166391, 1380004385))
+
+# # Get information about India
+# print(two_d_countries[4]) # ('India', 3166391, 1380004385)
+
+# # Get the area of India
+# print(two_d_countries[4][1]) # 3166391
+
+#============================================
+
+# Dictionary 
+# countries_dict = {'USA': (9629091, 331002651), 'Canada': (9984670, 37742154), 
+#             'Germany': (357114, 83783942)}
+
+# # Information about Canada
+# print(countries_dict["Canada"])
+
+# (9984670, 37742154)
+
+# ==========================================
+'''
+
+len(d) - returns the number of key:value pairs in the dictionary d;
+d.copy() - creates a copy of the dictionary d;
+d.items() - provides all the key, value pairs from the dictionary d;
+d.keys() - lists all the keys in the dictionary d;
+d.values() - provides all the values from the dictionary d.
+Wondering how to add new entries to a dictionary? Dictionaries don't utilize list methods like .append() or .extend(), and they don't support concatenation like strings. Instead, since dictionaries organize data in key-value pairs, you simply assign values using keys:
+
+d[k] = e - assigns the value e to the key k. If the key k already exists in the dictionary, its associated value will be updated.
+
+
+'''
+# Create variable
+# i = 1
+
+# # Initialize a while loop
+# while i < 9:
+#   # Print number i squared
+#   print(i**i)
+#   # Increment variable i by 1
+#   i += 1
+
+'''
+1
+4
+27
+256
+3125
+46656
+823543
+16777216
+'''
+
+# Create variable
+# i = 1
+
+# while i < 10:
+#   print(i**2)
+#   i = i + 1
+
+# 1
+# 4
+# 9
+# 16
+# 25
+# 36
+# 49
+# 64
+# 81
+# ==========================================
+
+
+values = [1, [2, 3], 4, "code"]
+
+for el in values:
+  print(el, end = ' ') # 1 [2, 3] 4 code 
+  # ==========================================
+
+  # Initial list
+values = [1, [2, 3], 4, "code"]
+
+# Initialize a for loop over indexes
+for i in range(len(values)):
+  print("Index:", i)
+  print("Value:", values[i])
+  print("----") 
+
+''''
+
+Index: 0
+Value: 1
+----
+Index: 1
+Value: [2, 3]
+----
+Index: 2
+Value: 4
+----
+Index: 3
+Value: code
+----
+'''  
+  # ==========================================
+
+# Countries data
+# countries = [['USA', 9629091, 331002651], ['Canada', 9984670, 37742154], 
+# ['Germany', 357114, 83783942], ['Brazil', 8515767, 212559417], ['India', 3166391, 1380004385]]
+
+
+# for country in countries: 
+ 
+#     print(country, end = ' ')
+#     print('\n') # Print new line after nested loop finish
+
+'''  
+['USA', 9629091, 331002651] 
+
+['Canada', 9984670, 37742154] 
+
+['Germany', 357114, 83783942] 
+
+['Brazil', 8515767, 212559417] 
+
+['India', 3166391, 1380004385] '''
+
+
+# for country in countries: 
+#   for j in country:
+#     print(j, end = ' ')
+#     print('\n') 
+
+'''  
+
+USA 9629091 331002651 
+
+Canada 9984670 37742154 
+
+Germany 357114 83783942 
+
+Brazil 8515767 212559417 
+
+India 3166391 1380004385
+'''
