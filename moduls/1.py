@@ -569,3 +569,91 @@ Brazil 8515767 212559417
 
 India 3166391 1380004385
 '''
+
+# ===========================
+# countries = [["USA", 9629091, 331002651], ["Canada", 9984670, 37742154],
+#             ["Germany", 357114, 83783942], ["Brazil", 8515767, 212559417],
+#             ["India", 3166391, 1380004385]]
+
+# # Iterating over external list
+# for i in range(len(countries)):
+#     if type(countries[i]) is list:
+#         # Computing population density for a country
+#         pop_dens = countries[i][2]/countries[i][1]
+#         print(countries[i][0], pop_dens, 'people per km²')
+
+'''
+USA 34.375274987015906 people per km²
+Canada 3.7800101555684864 people per km²
+Germany 234.61399441074838 people per km²
+Brazil 24.96068962431687 people per km²
+India 435.8287984648769 people per km²'''
+
+
+# people = [["Alex", 178], ["Noah", 189], ["Peter", 175], ["John", 185], ["Michelle", 165]]
+
+# ===========================
+
+# Iterating over external list
+# for i in range(len(people)):
+#     if type(people[i]) is list:
+#         # Calculate and round height in inches
+#         ht_in = round(people[i][1]/2.54, 2)
+#         print(people[i][0], 'is', ht_in, 'inches tall')
+'''
+Alex is 70.08 inches tall
+Noah is 74.41 inches tall
+Peter is 68.9 inches tall
+John is 72.83 inches tall
+Michelle is 64.96 inches tall'''
+
+
+#==============================================
+'''Let's say we have a dictionary named countries_dict that holds data in the format country: (area, population). We can create a function that takes two arguments: d (intended to be a dictionary) and name (intended to be a key in that dictionary). This function won't return any value; instead, it will just print the data in a user-friendly format.
+'''
+
+# countries_dict = {'USA': (9629091, 331002651), 'Canada': (9984670, 37742154), 
+#                   'Germany': (357114, 83783942), 'Brazil': (8515767, 212559417), 
+#                   'India': (3166391, 1380004385)}
+
+# def country_information(d, name):
+#   print('Country:', name)
+#   print('Area:', d[name][0], 'sq km')
+#   print('Population:', round(d[name][1]/1000000, 2), 'MM')
+
+# country_information(countries_dict, 'Brazil')
+# country_information(countries_dict, 'Germany')
+
+'''Country: Brazil
+Area: 8515767 sq km
+Population: 212.56 MM
+Country: Germany
+Area: 357114 sq km
+Population: 83.78 MM'''
+
+'''!!!!!!!!!!!!!!!!!!!!!
+d (intended to be a dictionary).
+name (intended to be a key within the dictionary).'''
+
+
+#======================================
+
+# countries_dict = {'USA': (9629091, 331002651), 'Canada': (9984670, 37742154), 
+#                   'Germany': (357114, 83783942), 'Brazil': (8515767, 212559417), 
+#                   'India': (3166391, 1380004385)}
+
+# def country_information_mod(d, name):
+#   if name not in d.keys():
+#     print("There is no information about", name)
+#   else:
+#     print("Country:", name)
+#     print("Area:", d[name][0], 'sq km')
+#     print("Population:", round(d[name][1]/1000000, 2), 'mln')
+        
+# country_information_mod(countries_dict, "USA")
+# country_information_mod(countries_dict, "Ukraine")
+
+# Country: USA
+# Area: 9629091 sq km
+# Population: 331.0 mln
+# There is no information about Ukraine
