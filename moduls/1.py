@@ -657,3 +657,9 @@ name (intended to be a key within the dictionary).'''
 # Area: 9629091 sq km
 # Population: 331.0 mln
 # There is no information about Ukraine
+
+#======================================  # Define lambda function
+sq = lambda x, y: (x + y)**2
+print('Sum of 2 and 3 squared is', sq(2, 3))
+
+# Sum of 2 and 3 squared is 25
