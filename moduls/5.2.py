@@ -228,3 +228,64 @@
 #========================================== Dictionary Comprehensions
 
 # {key: value for item in iterable if condition}
+# sq = {x: x**2 for x in range(1, 10)}
+# print(sq)
+
+# {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+# sq_dict = {x: x**2 for x in range(1, 10) if x > 5}
+# print(sq_dict)
+
+# {6: 36, 7: 49, 8: 64, 9: 81}
+
+#========================================== Лямбда-функції
+# lambda arguments: expression
+
+# add = lambda x, y: x + y
+# print(add(5, 3))  # Виведе 8
+
+
+# nums = [1, 2, 3, 4, 5]
+# nums_sorted = sorted(nums, key=lambda x: -x)
+# print(nums_sorted)
+
+# [5, 4, 3, 2, 1]
+
+#====================#====================#====================MAP
+# numbers = [1, 2, 3, 4, 5]
+
+# squared_nums = list(map(lambda x: x ** 2, numbers))
+# print(squared_nums)
+# # [1, 4, 9, 16, 25]
+
+
+# nums1 = [1, 2, 3]
+# nums2 = [4, 5, 6]
+# sum_nums = map(lambda x, y: x + y, nums1, nums2)
+
+# print(list(sum_nums))
+# [5, 7, 9]
+
+
+#====================#====================#==================== filter
+# even_nums = filter(lambda x: x % 2 == 0, range(1, 11))
+
+# print(list(even_nums))
+
+# [2, 4, 6, 8, 10]
+#====================#==
+# some_str = 'Видавництво А-БА-БА-ГА-ЛА-МА-ГА'
+
+# new_str = ''.join(list(filter(lambda x: x.islower(), some_str)))
+# print(new_str)
+
+# идавництво
+
+#====================# any
+
+# nums = [0, False, 5, 0]
+# result = any(nums)  
+# print(result)
+
+# True
+# 
