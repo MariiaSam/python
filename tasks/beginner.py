@@ -836,3 +836,149 @@ water vapor
 
 # ++++++++++++++++++++++++++++++++++++++++++++++ 
 
+'''1. Дан рядок.
+Розріжте його навпіл і переставте ці половинки містами.
+Якщо довжина непарна, то перша частина буде більшою.'''
+
+
+# old_str = 'лікар прописала пацієнтові.'
+
+# first_part = old_str[ :len(old_str)//2]
+# second_part = old_str[len(old_str)//2 : ]
+
+
+# # if len(old_str) % 2 == 1:
+# #     midd_index = len(old_str)//2 + 1
+# # else:
+# #     midd_index = len(old_str)//2
+
+# midd_index = len(old_str)//2 + len(old_str) % 2 
+
+# first_part = old_str[ :midd_index]
+# second_part = old_str[midd_index : ]
+
+# print(second_part + first_part)
+
+
+'''
+2. Дан текстовий рядок. В ньому можуть бути подвійні пробіли.
+Видаліть всі зайві пробіли.
+'''
+
+# str_replace = "Да  н текстовий  ряд  ок."
+# new_str_replace = str_replace.replace('  ', ' ')
+
+# print(new_str_replace)
+
+'''3.Дан рядок.
+НАйдіть в ньому другу букву "а". Виведіть індекс.
+Якщо є тільки одна  - виведить "alone", якщо взагалі нема
+виведіть None'''
+
+# string = 'Дан ДанДанДа нДанДанД анДанДанДан'
+
+# string.find('а')
+
+# if string.count('a') == 1:
+#     print("alone")
+# elif string.count('a') == 0:
+#     print(None)
+# else:
+#     print(string.find('а', string.find('а') + 1))
+
+# OR
+
+# match string.count('a'):
+#     case 1:
+#         print('alone')
+#     case 0:
+#         print(None)
+#     case _:
+#         print(string.find('а', string.find('а') + 1))
+
+'''4. У Джо Палуки товсті пальці, тому він завжди натискає клавішу "Caps Lock", коли насправді має намір натиснути клавішу "a". (Коли Джо намагається ввести якусь акцентовану версію "a", яка потребує більше натискань клавіш для створення акцентів, він більш обережний у присутності таких рафінованих символів ([Shift] + [a]) і буде натискати клавіші правильно). Обчисліть і виведіть результат введення Джо заданого тексту. Клавіша "Caps Lock" впливає лише на клавіші з літерами від "a" до "z", і не впливає на інші клавіші або символи. вважається, що клавіша "Caps Lock" спочатку вимкнена.
+
+assert caps_lock("Why are you asking me that?") == "Why RE YOU sking me thT?"
+assert caps_lock("Always wanted to visit Zambia.") == "AlwYS Wnted to visit ZMBI."
+assert caps_lock("Aloha from Hawaii") == "Aloh FROM HwII
+"'''
+
+  
+# def caps_lock(string):
+#     res_string = ''
+#     caps_flag = False
+#     for char in string:
+#         if char == 'a':
+#             caps_flag = not caps_flag
+#             continue
+#         if caps_flag:
+#             res_string += char.upper()
+#         else:
+#             res_string += char
+#     return res_string
+
+
+# def caps_lock(string):
+#     string_list = string.split('a')
+
+#     for i in range(1, len(string_list), 2):
+#         string_list[i] = string_list[i].upper()
+#     return ''.join(string_list)
+
+
+# assert caps_lock("Why are you asking me that?") == "Why RE YOU sking me thT?"
+# assert caps_lock("Always wanted to visit Zambia.") == "AlwYS Wnted to visit ZMBI."
+# assert caps_lock("Aloha from Hawaii") == "Aloh FROM HwII"
+
+
+'''4. Вам дано два рядки зі словами, розділеними комами. Спробуйте знайти, що спільного між цими рядками. Слова в одному рядку не повторюються.
+Ваша функція повинна знайти всі слова, які зустрічаються в обох рядках. Результат повинен бути представлений у вигляді рядка слів, відокремлених комами в алфавітному порядку.
+Вхідні дані: Два аргументи у вигляді рядків (str).
+Вихідні дані: Спільні слова у вигляді рядка (str).
+Приклади:
+assert checkio("hello,world", "hello,earth") == "hello"
+assert checkio("one,two,three", "four,five,six") == ""
+assert checkio("one,two,three", "four,five,one,two,six,three") == "one,three,two"'''
+
+
+
+# def checkio(string_1, string_2):
+#     string_1 = string_1.split(",")
+#     string_2 = string_2.split(",")
+
+#     string = set(string_1) & set(string_2)
+#     text = sorted(string)
+
+#     return ",".join(text)
+
+
+'''5.  Список містить різні числа. Вам необхідно відсортувати їх, але впорядкувати на основі абсолютних значень у зростаючому порядку. Для прикладу, послідовність (-20, -5, 10, 15) буде відсортована таким чином (-5, 10, 15, -20). Ваша функція повинна повертати список (list) або кортеж (tuple).'''
+
+# def sorting_numbers(list_of_numbers, x):
+#     # def abs_x(element):
+#     #     return abs(element-x)
+#     return sorted(list_of_numbers, key=lambda el: abs(el-x))[0]
+# nubmers = [5, 9, 12, 5, 1]
+# x = 10
+# print(sorting_numbers(nubmers,x))
+
+'''6. Заданий непустий список цілих чисел. В цій задачі тобі потрібно повернути список або інший ітеративний об'єкт (кортеж, генератор, ітератор), який складається тільки з неунікальних елементів початкового списку. Для цього необхідно видалити всі унікальні елементи (тобто ті, які наявні в списку тільки один раз). Наприклад: в [1, 2, 3, 1, 3], де 1, 3 - неунікальні елементи і результатом буде [1, 3, 1, 3].
+assert list(checkio([1, 2, 3, 1, 3])) == [1, 3, 1, 3]
+assert list(checkio([1, 2, 3, 4, 5])) == []
+assert list(checkio([5, 5, 5, 5, 5])) == [5, 5, 5, 5, 5]
+assert list(checkio([10, 9, 10, 10, 9, 8])) == [10, 9, 10, 10, 9]'''
+
+# def checkio(numbers):
+#     list_of_numbers = []
+#     for elem in numbers:
+#         number = numbers.count(elem)
+#         if number > 1:
+#             list_of_numbers.append(elem)
+#     return list_of_numbers
+
+
+
+# assert list(checkio([1, 2, 3, 1, 3])) == [1, 3, 1, 3]
+# assert list(checkio([1, 2, 3, 4, 5])) == []
+# assert list(checkio([5, 5, 5, 5, 5])) == [5, 5, 5, 5, 5]
+# assert list(checkio([10, 9, 10, 10, 9, 8])) == [10, 9, 10, 10, 9]
