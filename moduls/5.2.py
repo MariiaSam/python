@@ -273,6 +273,8 @@
 # print(list(even_nums))
 
 # [2, 4, 6, 8, 10]
+
+
 #====================#==
 # some_str = 'Видавництво А-БА-БА-ГА-ЛА-МА-ГА'
 
@@ -289,3 +291,48 @@
 
 # True
 # 
+# ++++++++++++++++++++++++++++++++++++++++++ Osadchuk
+
+# ==========================================
+# - може бути передана в іншу функцію як аргумент;
+# def sum(a, b):
+#     return a+b
+
+# def operation(k, m, func):
+#     return func(k, m)
+
+# print(operation(5, 3, sum))
+
+# ========================================== Замикання
+
+message = 'Goodbye'
+def outer_func(name):
+    message = 'Hello'
+    def inner_func(message, name):
+        return f'{message} {name}'
+    return inner_func(message, name)
+
+print(message)
+print(outer_func('Oleh'))
+
+#========================================
+def factorial(n, cache={}):
+    if n < 0:
+        raise ValueError
+
+    def counter(n):
+        result = 1
+        for value in range(1, n+1):
+            if value in cache:
+                result = cache[value]
+            else:
+                result = value * cache.get(value-1, 1)
+                cache[value] = result
+                print('{} not in cache {}'.format(value, result))
+        return result
+
+    return counter(n)
+
+print(factorial(3))
+print(factorial(6))
+print(factorial(4))
