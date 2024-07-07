@@ -305,34 +305,50 @@
 
 # ========================================== Замикання
 
-message = 'Goodbye'
-def outer_func(name):
-    message = 'Hello'
-    def inner_func(message, name):
-        return f'{message} {name}'
-    return inner_func(message, name)
+# message = 'Goodbye'
+# def outer_func(name):
+#     message = 'Hello'
+#     def inner_func(message, name):
+#         return f'{message} {name}'
+#     return inner_func(message, name)
 
-print(message)
-print(outer_func('Oleh'))
+# print(message)
+# print(outer_func('Oleh'))
 
 #========================================
-def factorial(n, cache={}):
-    if n < 0:
-        raise ValueError
+# def factorial(n, cache={}):
+#     if n < 0:
+#         raise ValueError
 
-    def counter(n):
-        result = 1
-        for value in range(1, n+1):
-            if value in cache:
-                result = cache[value]
-            else:
-                result = value * cache.get(value-1, 1)
-                cache[value] = result
-                print('{} not in cache {}'.format(value, result))
-        return result
+#     def counter(n):
+#         result = 1
+#         for value in range(1, n+1):
+#             if value in cache:
+#                 result = cache[value]
+#             else:
+#                 result = value * cache.get(value-1, 1)
+#                 cache[value] = result
+#                 print('{} not in cache {}'.format(value, result))
+#         return result
 
-    return counter(n)
+#     return counter(n)
 
-print(factorial(3))
-print(factorial(6))
-print(factorial(4))
+# print(factorial(3))
+# print(factorial(6))
+# print(factorial(4))
+
+#======================================== Декоратори
+# def greeting(variable):
+#     print(f'Function greeting with variable {variable}')
+# greeting('Bob')
+
+# def bot(func):
+#     def inner_func(*args, **kwargs):
+#         print('Hello')
+#         result = func(*args, **kwargs)
+#         print('Goodbye')
+#         return result
+#     return inner_func
+
+# bot_says = bot(greeting)
+# bot_says('TEST')
