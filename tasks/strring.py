@@ -81,25 +81,17 @@ ononononon
 66
 11'''
 
-# def get_number(numbers):
-#    change_firts = list(numbers)
-#    change_second = change_firts * 2
-#    return print(int(change_second))
-
-
-# print(get_number(125))
-# print(get_number(23))
-# print(get_number(1))
-
 def get_number(numbers):
-   count = 0
-   for number in numbers:
-      count += number
-      
+   change_firts = str(numbers)
+   change_second = change_firts * 2
+   result = int(change_second)
+   return result
 
 
 print(get_number(125))
 print(get_number(23))
 print(get_number(1))
+      
+
 
 
