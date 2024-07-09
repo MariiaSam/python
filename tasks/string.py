@@ -81,16 +81,16 @@ ononononon
 66
 11'''
 
-def get_number(numbers):
-   change_firts = str(numbers)
-   change_second = change_firts * 2
-   result = int(change_second)
-   return result
+# def get_number(numbers):
+#    change_firts = str(numbers)
+#    change_second = change_firts * 2
+#    result = int(change_second)
+#    return result
 
 
-print(get_number(125))
-print(get_number(23))
-print(get_number(1))
+# print(get_number(125))
+# print(get_number(23))
+# print(get_number(1))
       
 
 
