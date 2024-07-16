@@ -216,3 +216,70 @@ solid state drives
 monitors
 
 '''
+
+class Shop:
+
+    def __init__(self, shop_name, store_type, number_of_units = 0) -> None:
+        self.shop_name = shop_name
+        self.store_type = store_type
+        self.number_of_units = number_of_units
+    
+    def describe_shop(self):
+        print(f'Store name is {self.shop_name}')
+        print(f'Store type is {self.store_type}')
+        print(f'quantity of goods {self.number_of_units}')
+
+
+    def open_shop(self):
+        print(f'Store {self.shop_name} is open')
+
+    
+    def set_number_of_units(self, new_number_of_units):
+        self.new_number_of_units = new_number_of_units
+        print(f'Update quantity of goods in {self.shop_name} increment {self.new_number_of_units}')
+
+    
+    def increment_number_of_units(self, increment_value):
+        self.new_number_of_units += increment_value
+        print(f'quantity of goods in {self.shop_name} increment by {increment_value} to {self.increment_number_of_units}')
+
+class Discount(Shop):
+
+    def __init__(self, shop_name, store_type, new_number_of_unit=0, discount_products=[]):
+        super().__init__(shop_name, store_type, new_number_of_unit)       
+        self.discount_products = discount_products
+
+    def get_discounts_ptoducts(self):
+        print(f'{self.discount_products}')
+
+    
+    def get_discount_products(self):
+        if not self.discount_products:
+            print(f"There are currently no discount products in {self.shop_name}.")
+        else:
+            print(f"Discount Products in {self.shop_name}:")
+            for product in self.discount_products:
+                print(f"- {product}")
+
+first_store = Shop("Rozetka", "ishop")
+second_store = Shop('ITbox', 'electronics', 5000)
+
+
+first_store.describe_shop()
+
+first_store.open_shop()
+
+second_store.describe_shop()
+
+first_store.set_number_of_units(10000)
+print(f'quantity of goods in {first_store.shop_name}: {first_store.number_of_units}')
+
+first_store.increment_number_of_units(20000)
+print(f'Update quantity of goods in {first_store.shop_name}: {first_store.number_of_units}')
+
+
+discount_store = Discount("Technogrand", "electronics", 3000, ["Laptops", "Smartphones"])
+
+discount_store.describe_shop()
+discount_store.open_shop()
+discount_store.get_discount_products()
