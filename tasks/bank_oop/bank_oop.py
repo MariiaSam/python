@@ -40,7 +40,7 @@ bank_account.put_money(500)
 
 bank_account.get_money(200)
 
-bank_account.check_balance()
+bank_account.check_money()
 
 bank_account.get_money(1500)
 
