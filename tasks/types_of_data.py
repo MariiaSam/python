@@ -472,15 +472,297 @@ Enter int: 6
 Points: 145, 67, 111.
 '''
 
-def sentence_input(numbs):
-    if len(numbs) != 3:
-        raise ValueError("Please enter exactly 3 integers.")
+# def sentence_input(numbs):
+#     if len(numbs) != 3:
+#         raise ValueError("Please enter exactly 3 integers.")
     
-    numbs_str = [str(numb) for numb in numbs]
+#     numbs_str = [str(numb) for numb in numbs]
 
-    mess = "Points: " + ", ".join(numbs_str)  + '.'
-    print(mess)
+#     mess = "Points: " + ", ".join(numbs_str)  + '.'
+#     print(mess)
 
 
-numbs = [int(input("Enter int: ")) for _ in range(3)]
-sentence_input(numbs)
+# numbs = [int(input("Enter int: ")) for _ in range(3)]
+# sentence_input(numbs)
+
+'''
+Enter int: 34
+Enter int: 89
+Enter int: 32
+Points: 34, 89, 32.
+'''
+
+# 17
+
+'''
+Необхідно певну суму грошей залишити на банківському рахунку, щоб отримувати відсотки по закінченню певного часу. Наприклад, через 10 років ви хотіли б отримати 10 000 доларів США на власному рахунку. Скільки потрібно внести грошей на депозит сьогодні, щоб це сталося? Для розв’язування цієї задачі можна використовувати формулу 
+
+p = f/(1+r)*n, де p - це поточна сума, яку потрібно внести сьогодні, 
+
+f - майбутнє значення, яке ви хочете отримати (у нашому випадку становить 10 000 доларів США), 
+
+r - річна відсоткова ставка, n - кількість років перебування грошей на рахунку.
+
+Enter the desired future value: 10000
+Enter the annual interest rate: 0.05
+Enter the number of years the money will grow: 10
+
+You will need to deposit this amount: 6139.13.
+'''
+
+'''def calc_initial_deposite(future_value, interest_rate, years):
+    initial_deposite = future_value / (1 + interest_rate) * years
+    return initial_deposite
+
+future_value = float(input('Enter future_value: '))
+interest_rate = float(input('Enter interest_rate: '))
+years = int(input('Enter of years: '))
+
+
+result = calc_initial_deposite(future_value, interest_rate, years)
+print(f"Amount: {result:.2f}")'''
+
+# 6139.13
+# ** - піднесення до степеня Кожен рік сума збільшується на (1 + r) разів.
+# n років: За n років сума збільшується на (1 + r) помножене на себе n разів, тобто (1 + r)^n.
+
+# 18
+
+'''
+Вивести на екран три цілих числа в один рядок через пропуск у порядку, зворотному введенню чисел.
+
+Вхідні дані:
+
+4
+12
+-7
+Вихідні дані:
+
+-7 12 4
+
+'''
+
+# number_one = input("Enter 1 number: ")
+# number_two = input("Enter 2 number: ")
+# number_three = input("Enter 3 number: ")
+
+# list_number = f'{number_three} {number_two} {number_one}'
+# print(list_number) # -7 12 4
+
+# def list_number(number_one, number_two, number_three):
+#     return f'{number_three} {number_two} {number_one}'
+
+
+# number_one = input("Enter 1 number: ") # 4
+# number_two = input("Enter 2 number: ") # 12
+# number_three = input("Enter 3 number: ") # -8
+
+# result = list_number(number_one, number_two, number_three)
+# print(result) # -8 12 4
+
+#19
+
+'''
+Обчисліть n181 і виведіть на екран обчислене значення. Значення n - ціле число, яке вводиться з клавіатури.
+
+Вхідні дані:
+
+2
+Вихідні дані:
+
+3064991081731777716716694054300618367237478244367204352
+'''
+
+'''number = int(input("Enter int numb: "))
+
+degree = number ** 181
+print(degree)'''
+# 3064991081731777716716694054300618367237478244367204352
+
+# 20
+
+
+'''
+Цілі числа a і b вводяться користувачем. Напишіть програму для обчислення значення математичного виразу (45 + a - 11) / (b - 5)3.
+
+Вхідні дані:
+
+5
+10
+Вихідні дані:
+
+0.312
+'''
+
+'''
+def program(a, b):
+    return (45 + a - 11) / (b - 5) ** 3
+
+result = program(5, 10)
+print(result)'''
+# 0.312
+
+# 21
+
+'''
+Напишіть програму, яка обчислює суму, різницю, добуток, частку двох чисел, піднесення до степеня, розділяючи результати, записані в один рядок, символом &.
+
+Вхідні дані:
+
+6
+3
+Вихідні дані:
+
+9&3&18&2.0&216
+
+'''
+
+# def program(a, b):
+#     add = a + b
+#     minus = a - b
+#     mult = a * b
+#     dividing = a / b
+#     degree = a ** b
+
+#     return f'{add}&{minus}&{mult}&{dividing}&{degree}'
+
+
+# result = program(6, 3)
+# print(result)
+
+# 9&3&18&2.0&216
+
+# 21 
+
+'''
+Припускаючи, що немає затримок, відстань, яку автомобіль долає, можна розрахувати за такою формулою: Відстань = Швидкість · Час. Значення швидкості автомобіля вводиться користувачем з клавіатури (у км/год). Напишіть програму, яка виведе на екран значення відстані у кілометрах, яку пройде автомобіль через 6, 10, 15 годин відповідно.
+
+Вхідні дані:
+
+70
+Вихідні дані:
+
+420
+700
+1050
+'''
+
+'''def distances(speed, hours):
+    return speed * hours 
+    
+
+result1 = distances(70, 6)
+result2 = distances(70, 10)
+result3 = distances(70, 15)
+
+print(result1) # 420
+print(result2) # 700
+print(result3) # 1050'''
+
+# 21
+
+'''
+Обчисліть, скільки коштуватиме певний товар в магазині, якщо діє знижка на нього. Значення ціни товару і відсоток знижки вводяться в окремих рядках користувачем з клавіатури.
+
+Вхідні дані:
+
+150
+0.3
+Вихідні дані:
+
+105.0
+'''
+
+# def price_sale(full_price, percent):
+#     return full_price * (1 - percent)
+
+# full_price = (int(input("Enter full price: ")))
+# percent = (float(input("Enter percent: ")))
+
+# result = price_sale(full_price, percent)
+# print(result)
+# 150
+
+# 21
+
+'''
+Напишіть програму, яка зчитує три цілих числа і виводить найбільше значення з них. Не можна користуватися розгалуженнями і циклами.
+
+Вхідні дані:
+
+12
+-2
+54
+Вихідні дані:
+
+54
+-2
+'''
+
+'''numb1 = int(input("Enter numb 1: "))
+numb2 = int(input("Enter numb 2: "))
+numb3 = int(input("Enter numb 3: "))
+
+max_numb = max(numb1, numb2, numb3)
+print(max_numb)'''
+# 54
+
+# 22
+
+'''
+Сашко, зазвичай, спить вночі a годин і влаштовує собі вдень тиху годину на b хвилин. Визначте, скільки всього хвилин Сашко спить на добу.
+
+Вхідні дані:
+
+8
+45
+Вихідні дані:
+
+525
+'''
+
+sleep_night = 8 * 60
+sleep_day = 45
+
+print(sleep_night + sleep_day)
+# 525
+
+# 23
+
+'''
+
+'''
+
+
+
+# def split_bill(total_bill):
+
+#   tip = total_bill * 0.1
+
+#   total_with_tip = total_bill + tip
+
+#   amount_per_person = total_with_tip / 3
+
+#   return amount_per_person
+
+# bill = float(input("Введіть суму рахунку: "))
+
+# result = split_bill(bill)
+# print("Кожен з друзів повинен заплатити:", result)
+
+# 24
+
+'''
+В магазині канцелярських товарів Дарина купила a олівців, b ручок та c фломастерів. Відомо, що ціна ручки на 2 гривні більша ціни на олівець і на 7 гривень менша ціни на фломастера. Так само відомо, що вартість олівця становить d гривень. Користувачем вводяться по порядку в окремих рядках кількість олівців, ручок, фломастерів і ціна одного олівця. Необхідно обчислити загальну вартість покупки.
+
+Вхідні дані:
+
+1
+2
+2
+3
+Вихідні дані:
+
+37
+'''
+
