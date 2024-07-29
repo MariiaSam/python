@@ -30,8 +30,10 @@ def divide_apples(students, apples, round_down=True):
             return f'У нас тільки один студент, всі яблука залишиться у нього'
         elif balance == 0:  
             return f'Кожен з {students} студентів отримає по {apples_per_student} яблук(у), в кошику нічого не залишиться'
+        elif apples >= students:
+            return f'Кожен студент отримає по {apples_per_student} яблук(у), в кошику залишиться {balance} яблук(а/о)'
         else:
-            return f'У нас меньше яблук, які можна порівну поділити між студентами, в кошику залишиться всі {balance} яблук(а/о)'
+            return f'Занадто мало яблук для всіх студентів, немає що ділити, всі яблука в кількості {apples} штук в кошик'
     else:
         apples_per_student = math.ceil(apples / students)
         balance = apples - apples_per_student * students
