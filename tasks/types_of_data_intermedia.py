@@ -20,7 +20,7 @@ def divide_apples(students, apples, round_down=True):
     if apples == 0:
         return "Яблук немає, ніхто нічого не отримає."
     if students == 0:
-       return "Немає студентів, кому роздати яблука."
+       return "Немає студентів, кому роздати яблука?"
     
     apples_per_student = apples // students
     balance = apples % students
@@ -40,9 +40,25 @@ def divide_apples(students, apples, round_down=True):
         return f"Кожен з {students} студентів отримає {apples_per_student} яблук, в кошику залишиться {balance} яблук(а/о)."
 
 
+while True:
+    try:
+        students = int(input("Введіть кількість студентів: "))
+        if students < 0:
+            print("Кількість студентів не може бути від'ємною. Спробуйте ще раз.")
+            continue
+        break 
+    except ValueError:
+        print("Ви ввели не число. Спробуйте ще раз.")
 
-students = int(input("Введіть кількість студентів: "))
-apples = int(input("Скільки яблук є внаявності: "))
+while True:
+    try:
+        apples = int(input("Скільки яблук є внаявності: "))
+        if apples < 0:
+            print("Кількість яблук не може бути від'ємною. Спробуйте ще раз.")
+            continue
+        break
+    except ValueError:
+        print("Ви ввели не число. Спробуйте ще раз.")
 
 result = divide_apples(students, apples)
 print(result)
