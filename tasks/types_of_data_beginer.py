@@ -721,10 +721,10 @@ print(max_numb)'''
 525
 '''
 
-sleep_night = 8 * 60
-sleep_day = 45
+# sleep_night = 8 * 60
+# sleep_day = 45
 
-print(sleep_night + sleep_day)
+# print(sleep_night + sleep_day)
 # 525
 
 # 23
