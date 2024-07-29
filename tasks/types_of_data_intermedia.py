@@ -22,12 +22,14 @@ def divide_apples(students, apples, round_down=True):
     if students == 0:
        return "Немає студентів, кому роздати яблука."
     
-    # apple_per_student = apples // students
+    apples_per_student = apples // students
     balance = apples % students
 
     if round_down:
         if students == 1:
-            return f'У нас тільки один студент, всі яблука, тобто {apples} штук, залишиться у нього'
+            return f'У нас тільки один студент, всі яблука залишиться у нього'
+        elif balance == 0:  
+            return f'Кожен з {students} студентів отримає по {apples_per_student} яблук(у), в кошику нічого не залишиться'
         else:
             return f'У нас меньше яблук, які можна порівну поділити між студентами, в кошику залишиться всі {balance} яблук(а/о)'
     else:
