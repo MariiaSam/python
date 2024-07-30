@@ -18,47 +18,47 @@ import math
 
 def divide_apples(students, apples, round_down=True):
     if apples == 0:
-        return "Яблук немає, ніхто нічого не отримає."
+        return "There are no apples, no one will get anything."
     if students == 0:
-       return "Немає студентів, кому роздати яблука?"
+       return "No students to distribute apples to."
     
     apples_per_student = apples // students
     balance = apples % students
 
     if round_down:
         if students == 1:
-            return f'У нас тільки один студент, всі яблука залишиться у нього'
+            return f'We have only one student, and he will have all apples'
         elif balance == 0:  
-            return f'Кожен з {students} студентів отримає по {apples_per_student} яблук(у), в кошику нічого не залишиться'
+            return f'Each of {students} students will receive {apples_per_student} apples, nothing will remain in the basket'
         elif apples >= students:
-            return f'Кожен студент отримає по {apples_per_student} яблук(у), в кошику залишиться {balance} яблук(а/о)'
+            return f'Each of students will receive {apples_per_student} apples, and there will be {balance} apples in the basket'
         else:
-            return f'Занадто мало яблук для всіх студентів, немає що ділити, всі яблука в кількості {apples} штук в кошик'
+            return f'There are too few apples for all students, there is nothing to share, all apples in the amount of {apples} pieces in the basket'
     else:
         apples_per_student = math.ceil(apples / students)
         balance = apples - apples_per_student * students
-        return f"Кожен з {students} студентів отримає {apples_per_student} яблук, в кошику залишиться {balance} яблук(а/о)."
+        return f"Each of {students} students will receive {apples_per_student} apples, and the basket will have {balance} apples."
 
 
 while True:
     try:
-        students = int(input("Введіть кількість студентів: "))
+        students = int(input("Enter the number of students: "))
         if students < 0:
-            print("Кількість студентів не може бути від'ємною. Спробуйте ще раз.")
+            print("The number of students cannot be negative. Try again")
             continue
         break 
     except ValueError:
-        print("Ви ввели не число. Спробуйте ще раз.")
+        print("You have entered a number that is not a number. Try again.")
 
 while True:
     try:
-        apples = int(input("Скільки яблук є внаявності: "))
+        apples = int(input("How many apples are available: "))
         if apples < 0:
-            print("Кількість яблук не може бути від'ємною. Спробуйте ще раз.")
+            print("The number of apples cannot be negative. Try again.")
             continue
         break
     except ValueError:
-        print("Ви ввели не число. Спробуйте ще раз.")
+        print("You have entered a number that is not a number. Try again.")
 
 result = divide_apples(students, apples)
 print(result)
