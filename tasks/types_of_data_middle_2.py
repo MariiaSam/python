@@ -52,3 +52,5 @@ if __name__ == '__main__':
     _test_composition_and_print_result(1)
     _test_composition_and_print_result(1.5)
    
+a = 9 / 5
+print(a)
