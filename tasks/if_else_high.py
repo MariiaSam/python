@@ -13,6 +13,29 @@ yellow
 green
 red
 '''
+def traffic_light(time: int) -> str:
+    cyrcle_length = 6
+    time_in_cycle = time % cyrcle_length
+
+    if 0 <= time_in_cycle < 3:
+        return "green"
+    elif 3 <= time_in_cycle < 4:
+        return "yellow"
+    else:
+        return "red"
+
+input_times = int(input("Enter time number: "))
+
+
+result = traffic_light(input_times)
+print(result)
+
+time = 3 % 6
+print(time) # 3
+
+time = 4 % 6
+print(time) # 4
+
 
 
 
