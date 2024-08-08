@@ -1,4 +1,4 @@
-#======================================= Функція як об'єкт першого класу
+# ======================================= Функція як об'єкт першого класу
 
 # def my_function():
 #     print("Hello, world!")
@@ -7,7 +7,7 @@
 # f() # Hello, world!
 
 
-#===================
+# ===================
 
 # from typing import Callable
 
@@ -26,7 +26,7 @@
 
 # print(result_add, result_multiply) # 8 15
 
-#===================
+# ===================
 
 
 # from typing import Callable
@@ -43,7 +43,7 @@
 # print(square(4)) # 16
 # print(cube(4)) # 64
 
-#======================================
+# ======================================
 # from typing import Callable, Dict
 
 # Визначення функцій
@@ -78,7 +78,7 @@
 # print(result_square)  # 25
 
 
-#====================================================
+# ====================================================
 # def outer_function(msg):
 #     message = msg
 
@@ -105,7 +105,7 @@
 
 #     def increment() -> int:
 #         # використовуємо nonlocal, щоб змінити змінну в замиканні
-#         nonlocal count  
+#         nonlocal count
 #         count += 1
 #         return count
 
@@ -119,7 +119,7 @@
 # print(count_calls())  # Виведе 2
 # print(count_calls())  # Виведе 3
 
-#=======================================
+# =======================================
 # def add(a):
 #     def add_b(b):
 #         return a + b
@@ -164,7 +164,7 @@
 # discounted_price = twenty_percent_discount(500)  # 400.0
 # print(discounted_price)
 
-#==========================================
+# ==========================================
 
 # from typing import Callable, Dict
 
@@ -187,7 +187,7 @@
 # discounted_price = discount_functions[discount_type](price)
 # print(f"Ціна зі знижкою {discount_type}: {discounted_price}")
 
-#==========================================
+# ==========================================
 # def complicated(x: int, y: int) -> int:
 #     return x + y
 
@@ -204,7 +204,7 @@
 # print(complicated(2, 3))
 
 
-#========================================== List Comprehensions
+# ========================================== List Comprehensions
 
 
 # [new_item for item in iterable if condition]
@@ -215,9 +215,8 @@
 
 # even_squares = [x**2 for x in range(1, 10) if x % 2 == 0]
 # print(even_squares) # [4, 16, 36, 64]
- 
 
- #==========================================Set Comprehensions
+# ==========================================Set Comprehensions
 
 # {new_item for item in iterable if condition}
 # numbers = [1, 4, 1, 3, 2, 5, 2, 6]
@@ -225,7 +224,7 @@
 # print(sq)
 # {1, 4, 36, 9, 16, 25}
 
-#========================================== Dictionary Comprehensions
+# ========================================== Dictionary Comprehensions
 
 # {key: value for item in iterable if condition}
 # sq = {x: x**2 for x in range(1, 10)}
@@ -238,7 +237,7 @@
 
 # {6: 36, 7: 49, 8: 64, 9: 81}
 
-#========================================== Лямбда-функції
+# ========================================== Лямбда-функції
 # lambda arguments: expression
 
 # add = lambda x, y: x + y
@@ -251,7 +250,7 @@
 
 # [5, 4, 3, 2, 1]
 
-#====================#====================#====================MAP
+# ====================#====================#====================MAP
 # numbers = [1, 2, 3, 4, 5]
 
 # squared_nums = list(map(lambda x: x ** 2, numbers))
@@ -267,7 +266,7 @@
 # [5, 7, 9]
 
 
-#====================#====================#==================== filter
+# ====================#====================#==================== filter
 # even_nums = filter(lambda x: x % 2 == 0, range(1, 11))
 
 # print(list(even_nums))
@@ -275,7 +274,7 @@
 # [2, 4, 6, 8, 10]
 
 
-#====================#==
+# ====================#==
 # some_str = 'Видавництво А-БА-БА-ГА-ЛА-МА-ГА'
 
 # new_str = ''.join(list(filter(lambda x: x.islower(), some_str)))
@@ -283,14 +282,14 @@
 
 # идавництво
 
-#====================# any
+# ====================# any
 
 # nums = [0, False, 5, 0]
-# result = any(nums)  
+# result = any(nums)
 # print(result)
 
 # True
-# 
+#
 # ++++++++++++++++++++++++++++++++++++++++++ Osadchuk
 
 # ==========================================
@@ -315,7 +314,7 @@
 # print(message)
 # print(outer_func('Oleh'))
 
-#========================================
+# ========================================
 # def factorial(n, cache={}):
 #     if n < 0:
 #         raise ValueError
@@ -337,7 +336,7 @@
 # print(factorial(6))
 # print(factorial(4))
 
-#======================================== Декоратори
+# ======================================== Декоратори
 # def greeting(variable):
 #     print(f'Function greeting with variable {variable}')
 # greeting('Bob')
@@ -352,3 +351,9 @@
 
 # bot_says = bot(greeting)
 # bot_says('TEST')
+
+
+sentence = "the quick brown fox jumps over the lazy dog"
+# ['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+words = sentence.split()
+print(words)
