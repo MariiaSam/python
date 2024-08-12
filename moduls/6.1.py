@@ -20,7 +20,7 @@
 # print(user2.age)
 
 
-#++++++++++++++++++++++++++++++++
+# ++++++++++++++++++++++++++++++++
 
 # class User:
 #     name = None # властивості, атрибути
@@ -38,18 +38,18 @@
 # print(user_1.name) # Mariia
 # print(user_1.greeting())# викликаємо метод класу I'm Mariia
 
-#++++++++++++++++++++++++++++++++   Наслідування
+# ++++++++++++++++++++++++++++++++   Наслідування
 # class Person:
 #     name = None
 
 #     def greeting(self):
 #         print(f"I'm {self.name}")
-    
+
 # class Developer(Person):
 #     def do_job(self):
 #         print(f"I'm {self.name} writting code at that moment")
-    
-    # створимо обʼєкт класу Джуніор
+
+# створимо обʼєкт класу Джуніор
 
 # junior = Developer()
 # junior.name = "Mariia"
@@ -73,7 +73,7 @@
 # teamLead.manage()
 
 
-# 
+#
 class Person:
     def __init__(self, name: str, age: int, is_active: bool):
         self.name = name
@@ -82,12 +82,13 @@ class Person:
 
     def greeting(self):
         return f"Hi {self.name}"
-    
+
     def is_active(self):
         return self._is_active
 
     def set_active(self, active: bool):
         self._is_active = active
+
 
 p = Person("Boris", 34, True)
 print(p.name, p.age, p.is_active())
