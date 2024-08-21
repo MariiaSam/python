@@ -9,3 +9,22 @@ Jack Dorsey
 Ada Lovelace's birthday is 10/12/1815.
 Sadly, we don't have Jack Dorsey's birthday.
 '''
+
+programmers = {
+    "Ada Lovelace": "10/12/1815",
+    "Alan Turing": "23/06/1912",
+    "Grace Hopper": "09/12/1906",
+}
+
+
+def find_birthday(name):
+
+    if name in programmers:
+        return f"{name}'s birthday is {programmers[name]}."
+    else:
+        return f"Sadly, we don't have {name}'s birthday."
+
+
+name = input("Enter the name of a famous programmer: ")
+
+print(find_birthday(name))  # Ada Lovelace's birthday is 10/12/1815
